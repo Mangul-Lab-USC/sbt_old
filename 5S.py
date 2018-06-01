@@ -19,8 +19,9 @@ for read in samfile.fetch('1', 228743523, 228781906):
 	out.write(read.query_sequence)
 	out.write("\n")
 	out.write("+")
+	out.write("\n")
 	out.write(read.qual)
-	out.write("+")
+	out.write("\n")
 
 
 samfile.close()
