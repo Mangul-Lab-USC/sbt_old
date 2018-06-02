@@ -119,9 +119,6 @@ $samtools mpileup -uf ${DIR_CODE}/db.human/IMGT/receptor.genes.fasta ${SAMPLE}.s
 
 #7 imrep
 echo "---------------------------------------------------------------------------"
-echo "imrep"
-python /u/home/s/serghei/collab/code/imrep/imrep.py --bam --extendedOutput ${bam} ${SAMPLE}.imrep.cdr3
-
 # 8 map to microbiome - sort of micop here! do better fungi reference TODO!
 #metaphlan
 
@@ -149,3 +146,5 @@ bwa mem -a /u/home/s/serghei/collab/code/rop/db_human/protozoa/protozoa.ncbi.feb
 
 
   
+python /u/home/s/serghei/collab/code/imrep/imrep.py --bam --extendedOutput ${bam} ${SAMPLE}.imrep.cdr3
+
