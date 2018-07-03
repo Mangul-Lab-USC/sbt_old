@@ -1,0 +1,6 @@
+[M::bwa_idx_load_from_disk] read 0 ALT contigs
+[M::process] read 43777 sequences (3283275 bp)...
+[M::mem_process_seqs] Processed 43777 reads in 20.700 CPU sec, 20.713 real sec
+[main] Version: 0.7.17-r1188
+[main] CMD: bwa mem /u/home/s/serghei/project/Homo_sapiens/Ensembl/GRCh37/Sequence/BWAIndex/genome.fa rDNA.kmers.75.clean.fasta
+[main] Real time: 123.390 sec; CPU: 37.968 sec

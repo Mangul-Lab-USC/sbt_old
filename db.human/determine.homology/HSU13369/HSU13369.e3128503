@@ -1,0 +1,8 @@
+[M::bwa_idx_load_from_disk] read 0 ALT contigs
+[M::process] read 41620 sequences (3121500 bp)...
+[M::mem_process_seqs] Processed 41620 reads in 8.228 CPU sec, 8.228 real sec
+[main] Version: 0.7.17-r1188
+[main] CMD: bwa mem /u/home/s/serghei/project/Homo_sapiens/igenomes/Homo_sapiens/NCBI/GRCh38/Sequence/BWAIndex/genome.fa HSU13369.kmers.75bp.fasta
+[main] Real time: 127.561 sec; CPU: 18.129 sec
+[E::hts_open_format] fail to open file 'HSU13369.bam'
+samtools depth: Could not open "HSU13369.bam": No such file or directory

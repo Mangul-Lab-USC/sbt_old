@@ -1,0 +1,53 @@
+
+
+length of genomes
+- MT 16806
+
+14/06/2018
+
+
+jellyfish count -m 75 -s 100M -t 10 -C repbase.fa
+jellyfish dump  mer_counts.jf >mer_counts.txt
+jellyfish dump mer_counts.jf>repbase.kmers.75.fasta
+
+grep -v ">" repbase.kmers.75.fasta | awk '{i+=1;print ">"i"\n"$1 }' >repbase.kmers.75.clean.fasta
+awk '{print $1","$2","$3}' repbase.kmers.75.clean.cov >repbase.kmers.75.clean.cov.csv
+
+
+
+#------
+awk -F "," '{if ($3-$2>100) print}' rDNA.kmers.75.clean.ALL.bed >rDNA.kmers.75.clean.filtered.bed
+
+
+
+02/05/2015
+
+data downloaded from RepBase
+http://www.girinst.org/repbase/
+
+
+merge humrep.ref & humsub.ref 
+they contain 1 identical repeats
+
+prepare ref files
+1) sed 's/\t/-/g' humsub.ref | sed 's/x/N/g'>humsub_v2_N.txt
+2) delete 1identical repeat
+3) merge 
+4) makeblastdb -parse_seqids -dbtype nucl -in <file merged> 
+5) makembindex -input human_repbase_20_07.fa -output  human_repbase_20_07.fa -iformat blastdb
+
+Building a new DB, current time: 08/05/2015 09:45:19
+New DB name:   human_repbase_20_07.fa
+New DB title:  human_repbase_20_07.fa
+Sequence type: Nucleotide
+Keep Linkouts: T
+Keep MBits: T
+Maximum file size: 1000000000B
+Adding sequences from FASTA; added 1117 sequences in 0.123115 seconds.
+
+blast indx was succesefully created
+
+
+
+
+

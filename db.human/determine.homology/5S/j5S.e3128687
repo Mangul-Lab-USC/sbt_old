@@ -1,0 +1,6 @@
+[M::bwa_idx_load_from_disk] read 0 ALT contigs
+[M::process] read 2157 sequences (161775 bp)...
+[M::mem_process_seqs] Processed 2157 reads in 0.477 CPU sec, 0.477 real sec
+[main] Version: 0.7.17-r1188
+[main] CMD: bwa mem /u/home/s/serghei/project/Homo_sapiens/igenomes/Homo_sapiens/NCBI/GRCh38/Sequence/BWAIndex/genome.fa 5S.kmers.75bp.fasta
+[main] Real time: 87.986 sec; CPU: 10.777 sec
