@@ -1,0 +1,14 @@
+required infile: 
+required outfile: 
+
+Start. 1530668831
+---------------------------------------------------------------------------
+Extract unmapped reads from  C347.TCGA-55-1592-01A-01D-0969-08.1.bam
+/u/home/s/serghei/collab/code/rop.old/tools/samtools view -f 0x4 -bh C347.TCGA-55-1592-01A-01D-0969-08.1.bam | /u/home/s/serghei/collab/code/rop.old/tools/samtools bam2fq - >/u/home/s/serghei/scratch/test.sbt//C347.TCGA-55-1592-01A-01D-0969-08.1.unmapped.fastq
+---------------------------------------------------------------------------
+Extract reads from GL000220.1 and save to /u/home/s/serghei/scratch/test.sbt//C347.TCGA-55-1592-01A-01D-0969-08.1.GL000220.fastq
+hg19 release was used
+---------------------------------------------------------------------------
+Merge unmapped + GL000220.1 + 5S and map to 45S and 5S  /u/home/s/serghei/scratch/test.sbt//C347.TCGA-55-1592-01A-01D-0969-08.1.cat.rDNA.fastq
+---------------------------------------------------------------------------
+MT

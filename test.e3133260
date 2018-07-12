@@ -1,0 +1,726 @@
+[M::bam2fq_mainloop] processed 5933380 reads
+[M::bam2fq_mainloop] processed 6 reads
+[M::bwa_idx_load_from_disk] read 0 ALT contigs
+[M::process] read 131580 sequences (10000080 bp)...
+[M::process] read 131580 sequences (10000080 bp)...
+[M::mem_process_seqs] Processed 131580 reads in 13.948 CPU sec, 13.840 real sec
+[M::process] read 131580 sequences (10000080 bp)...
+[M::mem_process_seqs] Processed 131580 reads in 13.889 CPU sec, 13.740 real sec
+[M::process] read 131580 sequences (10000080 bp)...
+[M::mem_process_seqs] Processed 131580 reads in 14.052 CPU sec, 13.880 real sec
+[M::process] read 131580 sequences (10000080 bp)...
+[M::mem_process_seqs] Processed 131580 reads in 13.213 CPU sec, 13.063 real sec
+[M::process] read 131580 sequences (10000080 bp)...
+[M::mem_process_seqs] Processed 131580 reads in 14.973 CPU sec, 14.802 real sec
+[M::process] read 131580 sequences (10000080 bp)...
+[M::mem_process_seqs] Processed 131580 reads in 13.695 CPU sec, 13.537 real sec
+[M::process] read 131580 sequences (10000080 bp)...
+[M::mem_process_seqs] Processed 131580 reads in 13.677 CPU sec, 13.514 real sec
+[M::process] read 131580 sequences (10000080 bp)...
+[M::mem_process_seqs] Processed 131580 reads in 13.705 CPU sec, 13.543 real sec
+[M::process] read 131580 sequences (10000080 bp)...
+[M::mem_process_seqs] Processed 131580 reads in 14.627 CPU sec, 14.462 real sec
+[M::process] read 131580 sequences (10000080 bp)...
+[M::mem_process_seqs] Processed 131580 reads in 13.713 CPU sec, 13.552 real sec
+[M::process] read 131580 sequences (10000080 bp)...
+[M::mem_process_seqs] Processed 131580 reads in 13.295 CPU sec, 13.135 real sec
+[M::process] read 131580 sequences (10000080 bp)...
+[M::mem_process_seqs] Processed 131580 reads in 13.151 CPU sec, 12.995 real sec
+[M::process] read 131580 sequences (10000080 bp)...
+[M::mem_process_seqs] Processed 131580 reads in 14.130 CPU sec, 13.965 real sec
+[M::process] read 131580 sequences (10000080 bp)...
+[M::mem_process_seqs] Processed 131580 reads in 12.125 CPU sec, 11.973 real sec
+[M::process] read 131580 sequences (10000080 bp)...
+[M::mem_process_seqs] Processed 131580 reads in 13.175 CPU sec, 13.020 real sec
+[M::process] read 131580 sequences (10000080 bp)...
+[M::mem_process_seqs] Processed 131580 reads in 13.159 CPU sec, 13.011 real sec
+[M::process] read 131580 sequences (10000080 bp)...
+[M::mem_process_seqs] Processed 131580 reads in 12.946 CPU sec, 12.788 real sec
+[M::process] read 131580 sequences (10000080 bp)...
+[M::mem_process_seqs] Processed 131580 reads in 12.787 CPU sec, 12.646 real sec
+[M::process] read 131580 sequences (10000080 bp)...
+[M::mem_process_seqs] Processed 131580 reads in 12.752 CPU sec, 12.607 real sec
+[M::process] read 131580 sequences (10000080 bp)...
+[M::mem_process_seqs] Processed 131580 reads in 12.711 CPU sec, 12.574 real sec
+[M::process] read 131580 sequences (10000080 bp)...
+[M::mem_process_seqs] Processed 131580 reads in 12.687 CPU sec, 12.540 real sec
+[M::process] read 131580 sequences (10000080 bp)...
+[M::mem_process_seqs] Processed 131580 reads in 12.718 CPU sec, 12.582 real sec
+[M::process] read 131580 sequences (10000080 bp)...
+[M::mem_process_seqs] Processed 131580 reads in 12.670 CPU sec, 12.524 real sec
+[M::process] read 131580 sequences (10000080 bp)...
+[M::mem_process_seqs] Processed 131580 reads in 12.754 CPU sec, 12.618 real sec
+[M::process] read 131580 sequences (10000080 bp)...
+[M::mem_process_seqs] Processed 131580 reads in 12.614 CPU sec, 12.462 real sec
+[M::process] read 131580 sequences (10000080 bp)...
+[M::mem_process_seqs] Processed 131580 reads in 12.655 CPU sec, 12.522 real sec
+[M::process] read 131580 sequences (10000080 bp)...
+[M::mem_process_seqs] Processed 131580 reads in 12.761 CPU sec, 12.618 real sec
+[M::process] read 131580 sequences (10000080 bp)...
+[M::mem_process_seqs] Processed 131580 reads in 12.877 CPU sec, 12.743 real sec
+[M::process] read 131580 sequences (10000080 bp)...
+[M::mem_process_seqs] Processed 131580 reads in 12.645 CPU sec, 12.500 real sec
+[M::process] read 131580 sequences (10000080 bp)...
+[M::mem_process_seqs] Processed 131580 reads in 13.061 CPU sec, 12.920 real sec
+[M::process] read 131580 sequences (10000080 bp)...
+[M::mem_process_seqs] Processed 131580 reads in 12.913 CPU sec, 12.750 real sec
+[M::process] read 131580 sequences (10000080 bp)...
+[M::mem_process_seqs] Processed 131580 reads in 12.838 CPU sec, 12.705 real sec
+[M::process] read 131580 sequences (10000080 bp)...
+[M::mem_process_seqs] Processed 131580 reads in 13.078 CPU sec, 12.915 real sec
+[M::process] read 131580 sequences (10000080 bp)...
+[M::mem_process_seqs] Processed 131580 reads in 12.718 CPU sec, 12.587 real sec
+[M::process] read 131580 sequences (10000080 bp)...
+[M::mem_process_seqs] Processed 131580 reads in 13.048 CPU sec, 12.905 real sec
+[M::process] read 131580 sequences (10000080 bp)...
+[M::mem_process_seqs] Processed 131580 reads in 12.708 CPU sec, 12.571 real sec
+[M::process] read 131580 sequences (10000080 bp)...
+[M::mem_process_seqs] Processed 131580 reads in 12.940 CPU sec, 12.782 real sec
+[M::process] read 131580 sequences (10000080 bp)...
+[M::mem_process_seqs] Processed 131580 reads in 12.931 CPU sec, 12.798 real sec
+[M::process] read 131580 sequences (10000080 bp)...
+[M::mem_process_seqs] Processed 131580 reads in 12.747 CPU sec, 12.602 real sec
+[M::process] read 131580 sequences (10000080 bp)...
+[M::mem_process_seqs] Processed 131580 reads in 12.878 CPU sec, 12.741 real sec
+[M::process] read 131580 sequences (10000080 bp)...
+[M::mem_process_seqs] Processed 131580 reads in 12.569 CPU sec, 12.419 real sec
+[M::process] read 131580 sequences (10000080 bp)...
+[M::mem_process_seqs] Processed 131580 reads in 12.648 CPU sec, 12.494 real sec
+[M::process] read 131580 sequences (10000080 bp)...
+[M::mem_process_seqs] Processed 131580 reads in 12.919 CPU sec, 12.765 real sec
+[M::process] read 131580 sequences (10000080 bp)...
+[M::mem_process_seqs] Processed 131580 reads in 13.309 CPU sec, 13.170 real sec
+[M::process] read 12286 sequences (933736 bp)...
+[M::mem_process_seqs] Processed 131580 reads in 11.928 CPU sec, 11.871 real sec
+[M::mem_process_seqs] Processed 12286 reads in 1.252 CPU sec, 1.206 real sec
+[main] Version: 0.7.17-r1188
+[main] CMD: bwa mem -a ./db.human/viral.vipr/NONFLU_All.fastq /u/home/s/serghei/scratch/test.sbt//C347.TCGA-55-1592-01A-01D-0969-08.1.cat.unmapped.fastq
+[main] Real time: 626.958 sec; CPU: 593.840 sec
+[M::bwa_idx_load_from_disk] read 0 ALT contigs
+[M::process] read 131580 sequences (10000080 bp)...
+[M::process] read 131580 sequences (10000080 bp)...
+[M::mem_process_seqs] Processed 131580 reads in 9.717 CPU sec, 9.624 real sec
+[M::process] read 131580 sequences (10000080 bp)...
+[M::mem_process_seqs] Processed 131580 reads in 10.288 CPU sec, 10.155 real sec
+[M::process] read 131580 sequences (10000080 bp)...
+[M::mem_process_seqs] Processed 131580 reads in 10.383 CPU sec, 10.231 real sec
+[M::process] read 131580 sequences (10000080 bp)...
+[M::mem_process_seqs] Processed 131580 reads in 10.122 CPU sec, 9.992 real sec
+[M::process] read 131580 sequences (10000080 bp)...
+[M::mem_process_seqs] Processed 131580 reads in 10.308 CPU sec, 10.170 real sec
+[M::process] read 131580 sequences (10000080 bp)...
+[M::mem_process_seqs] Processed 131580 reads in 10.160 CPU sec, 10.039 real sec
+[M::process] read 131580 sequences (10000080 bp)...
+[M::mem_process_seqs] Processed 131580 reads in 9.845 CPU sec, 9.708 real sec
+[M::process] read 131580 sequences (10000080 bp)...
+[M::mem_process_seqs] Processed 131580 reads in 9.990 CPU sec, 9.868 real sec
+[M::process] read 131580 sequences (10000080 bp)...
+[M::mem_process_seqs] Processed 131580 reads in 10.359 CPU sec, 10.228 real sec
+[M::process] read 131580 sequences (10000080 bp)...
+[M::mem_process_seqs] Processed 131580 reads in 9.597 CPU sec, 9.476 real sec
+[M::process] read 131580 sequences (10000080 bp)...
+[M::mem_process_seqs] Processed 131580 reads in 10.102 CPU sec, 9.970 real sec
+[M::process] read 131580 sequences (10000080 bp)...
+[M::mem_process_seqs] Processed 131580 reads in 11.064 CPU sec, 10.938 real sec
+[M::process] read 131580 sequences (10000080 bp)...
+[M::mem_process_seqs] Processed 131580 reads in 11.356 CPU sec, 11.228 real sec
+[M::process] read 131580 sequences (10000080 bp)...
+[M::mem_process_seqs] Processed 131580 reads in 9.173 CPU sec, 9.051 real sec
+[M::process] read 131580 sequences (10000080 bp)...
+[M::mem_process_seqs] Processed 131580 reads in 10.247 CPU sec, 10.118 real sec
+[M::process] read 131580 sequences (10000080 bp)...
+[M::mem_process_seqs] Processed 131580 reads in 9.634 CPU sec, 9.514 real sec
+[M::process] read 131580 sequences (10000080 bp)...
+[M::mem_process_seqs] Processed 131580 reads in 9.259 CPU sec, 9.126 real sec
+[M::process] read 131580 sequences (10000080 bp)...
+[M::mem_process_seqs] Processed 131580 reads in 9.762 CPU sec, 9.636 real sec
+[M::process] read 131580 sequences (10000080 bp)...
+[M::mem_process_seqs] Processed 131580 reads in 10.013 CPU sec, 9.890 real sec
+[M::process] read 131580 sequences (10000080 bp)...
+[M::mem_process_seqs] Processed 131580 reads in 9.648 CPU sec, 9.530 real sec
+[M::process] read 131580 sequences (10000080 bp)...
+[M::mem_process_seqs] Processed 131580 reads in 9.539 CPU sec, 9.409 real sec
+[M::process] read 131580 sequences (10000080 bp)...
+[M::mem_process_seqs] Processed 131580 reads in 9.843 CPU sec, 9.725 real sec
+[M::process] read 131580 sequences (10000080 bp)...
+[M::mem_process_seqs] Processed 131580 reads in 9.795 CPU sec, 9.661 real sec
+[M::process] read 131580 sequences (10000080 bp)...
+[M::mem_process_seqs] Processed 131580 reads in 9.640 CPU sec, 9.524 real sec
+[M::process] read 131580 sequences (10000080 bp)...
+[M::mem_process_seqs] Processed 131580 reads in 9.824 CPU sec, 9.699 real sec
+[M::process] read 131580 sequences (10000080 bp)...
+[M::mem_process_seqs] Processed 131580 reads in 9.992 CPU sec, 9.880 real sec
+[M::process] read 131580 sequences (10000080 bp)...
+[M::mem_process_seqs] Processed 131580 reads in 10.121 CPU sec, 9.994 real sec
+[M::process] read 131580 sequences (10000080 bp)...
+[M::mem_process_seqs] Processed 131580 reads in 9.583 CPU sec, 9.471 real sec
+[M::process] read 131580 sequences (10000080 bp)...
+[M::mem_process_seqs] Processed 131580 reads in 8.488 CPU sec, 8.381 real sec
+[M::process] read 131580 sequences (10000080 bp)...
+[M::mem_process_seqs] Processed 131580 reads in 9.930 CPU sec, 9.822 real sec
+[M::process] read 131580 sequences (10000080 bp)...
+[M::mem_process_seqs] Processed 131580 reads in 9.561 CPU sec, 9.444 real sec
+[M::process] read 131580 sequences (10000080 bp)...
+[M::mem_process_seqs] Processed 131580 reads in 9.458 CPU sec, 9.338 real sec
+[M::process] read 131580 sequences (10000080 bp)...
+[M::mem_process_seqs] Processed 131580 reads in 9.567 CPU sec, 9.448 real sec
+[M::process] read 131580 sequences (10000080 bp)...
+[M::mem_process_seqs] Processed 131580 reads in 9.645 CPU sec, 9.527 real sec
+[M::process] read 131580 sequences (10000080 bp)...
+[M::mem_process_seqs] Processed 131580 reads in 9.313 CPU sec, 9.194 real sec
+[M::process] read 131580 sequences (10000080 bp)...
+[M::mem_process_seqs] Processed 131580 reads in 9.713 CPU sec, 9.596 real sec
+[M::process] read 131580 sequences (10000080 bp)...
+[M::mem_process_seqs] Processed 131580 reads in 9.526 CPU sec, 9.406 real sec
+[M::process] read 131580 sequences (10000080 bp)...
+[M::mem_process_seqs] Processed 131580 reads in 9.529 CPU sec, 9.410 real sec
+[M::process] read 131580 sequences (10000080 bp)...
+[M::mem_process_seqs] Processed 131580 reads in 9.681 CPU sec, 9.561 real sec
+[M::process] read 131580 sequences (10000080 bp)...
+[M::mem_process_seqs] Processed 131580 reads in 9.664 CPU sec, 9.546 real sec
+[M::process] read 131580 sequences (10000080 bp)...
+[M::mem_process_seqs] Processed 131580 reads in 9.452 CPU sec, 9.330 real sec
+[M::process] read 131580 sequences (10000080 bp)...
+[M::mem_process_seqs] Processed 131580 reads in 9.390 CPU sec, 9.267 real sec
+[M::process] read 131580 sequences (10000080 bp)...
+[M::mem_process_seqs] Processed 131580 reads in 8.960 CPU sec, 8.841 real sec
+[M::process] read 131580 sequences (10000080 bp)...
+[M::mem_process_seqs] Processed 131580 reads in 9.594 CPU sec, 9.478 real sec
+[M::process] read 12280 sequences (933280 bp)...
+[M::mem_process_seqs] Processed 131580 reads in 9.539 CPU sec, 9.483 real sec
+[M::mem_process_seqs] Processed 12280 reads in 0.965 CPU sec, 0.912 real sec
+[main] Version: 0.7.17-r1188
+[main] CMD: bwa mem -a ./db.human/fungi/fungi.ncbi.february.3.2018.fasta /u/home/s/serghei/scratch/test.sbt//C347.TCGA-55-1592-01A-01D-0969-08.1.unmapped.fastq
+[main] Real time: 447.317 sec; CPU: 441.593 sec
+[M::bwa_idx_load_from_disk] read 0 ALT contigs
+[M::process] read 131580 sequences (10000080 bp)...
+[M::process] read 131580 sequences (10000080 bp)...
+[M::mem_process_seqs] Processed 131580 reads in 6.897 CPU sec, 6.805 real sec
+[M::process] read 131580 sequences (10000080 bp)...
+[M::mem_process_seqs] Processed 131580 reads in 7.009 CPU sec, 6.875 real sec
+[M::process] read 131580 sequences (10000080 bp)...
+[M::mem_process_seqs] Processed 131580 reads in 6.862 CPU sec, 6.717 real sec
+[M::process] read 131580 sequences (10000080 bp)...
+[M::mem_process_seqs] Processed 131580 reads in 6.999 CPU sec, 6.872 real sec
+[M::process] read 131580 sequences (10000080 bp)...
+[M::mem_process_seqs] Processed 131580 reads in 6.917 CPU sec, 6.776 real sec
+[M::process] read 131580 sequences (10000080 bp)...
+[M::mem_process_seqs] Processed 131580 reads in 6.961 CPU sec, 6.840 real sec
+[M::process] read 131580 sequences (10000080 bp)...
+[M::mem_process_seqs] Processed 131580 reads in 7.187 CPU sec, 7.051 real sec
+[M::process] read 131580 sequences (10000080 bp)...
+[M::mem_process_seqs] Processed 131580 reads in 6.723 CPU sec, 6.598 real sec
+[M::process] read 131580 sequences (10000080 bp)...
+[M::mem_process_seqs] Processed 131580 reads in 6.900 CPU sec, 6.762 real sec
+[M::process] read 131580 sequences (10000080 bp)...
+[M::mem_process_seqs] Processed 131580 reads in 6.886 CPU sec, 6.757 real sec
+[M::process] read 131580 sequences (10000080 bp)...
+[M::mem_process_seqs] Processed 131580 reads in 6.976 CPU sec, 6.838 real sec
+[M::process] read 131580 sequences (10000080 bp)...
+[M::mem_process_seqs] Processed 131580 reads in 7.009 CPU sec, 6.884 real sec
+[M::process] read 131580 sequences (10000080 bp)...
+[M::mem_process_seqs] Processed 131580 reads in 7.113 CPU sec, 6.969 real sec
+[M::process] read 131580 sequences (10000080 bp)...
+[M::mem_process_seqs] Processed 131580 reads in 6.677 CPU sec, 6.549 real sec
+[M::process] read 131580 sequences (10000080 bp)...
+[M::mem_process_seqs] Processed 131580 reads in 6.869 CPU sec, 6.732 real sec
+[M::process] read 131580 sequences (10000080 bp)...
+[M::mem_process_seqs] Processed 131580 reads in 6.752 CPU sec, 6.629 real sec
+[M::process] read 131580 sequences (10000080 bp)...
+[M::mem_process_seqs] Processed 131580 reads in 6.574 CPU sec, 6.441 real sec
+[M::process] read 131580 sequences (10000080 bp)...
+[M::mem_process_seqs] Processed 131580 reads in 6.737 CPU sec, 6.616 real sec
+[M::process] read 131580 sequences (10000080 bp)...
+[M::mem_process_seqs] Processed 131580 reads in 6.769 CPU sec, 6.643 real sec
+[M::process] read 131580 sequences (10000080 bp)...
+[M::mem_process_seqs] Processed 131580 reads in 6.606 CPU sec, 6.486 real sec
+[M::process] read 131580 sequences (10000080 bp)...
+[M::mem_process_seqs] Processed 131580 reads in 6.709 CPU sec, 6.579 real sec
+[M::process] read 131580 sequences (10000080 bp)...
+[M::mem_process_seqs] Processed 131580 reads in 7.045 CPU sec, 6.924 real sec
+[M::process] read 131580 sequences (10000080 bp)...
+[M::mem_process_seqs] Processed 131580 reads in 6.725 CPU sec, 6.595 real sec
+[M::process] read 131580 sequences (10000080 bp)...
+[M::mem_process_seqs] Processed 131580 reads in 6.776 CPU sec, 6.655 real sec
+[M::process] read 131580 sequences (10000080 bp)...
+[M::mem_process_seqs] Processed 131580 reads in 6.963 CPU sec, 6.839 real sec
+[M::process] read 131580 sequences (10000080 bp)...
+[M::mem_process_seqs] Processed 131580 reads in 7.138 CPU sec, 7.020 real sec
+[M::process] read 131580 sequences (10000080 bp)...
+[M::mem_process_seqs] Processed 131580 reads in 6.985 CPU sec, 6.854 real sec
+[M::process] read 131580 sequences (10000080 bp)...
+[M::mem_process_seqs] Processed 131580 reads in 6.853 CPU sec, 6.734 real sec
+[M::process] read 131580 sequences (10000080 bp)...
+[M::mem_process_seqs] Processed 131580 reads in 6.657 CPU sec, 6.527 real sec
+[M::process] read 131580 sequences (10000080 bp)...
+[M::mem_process_seqs] Processed 131580 reads in 6.785 CPU sec, 6.665 real sec
+[M::process] read 131580 sequences (10000080 bp)...
+[M::mem_process_seqs] Processed 131580 reads in 6.770 CPU sec, 6.640 real sec
+[M::process] read 131580 sequences (10000080 bp)...
+[M::mem_process_seqs] Processed 131580 reads in 6.935 CPU sec, 6.814 real sec
+[M::process] read 131580 sequences (10000080 bp)...
+[M::mem_process_seqs] Processed 131580 reads in 6.894 CPU sec, 6.763 real sec
+[M::process] read 131580 sequences (10000080 bp)...
+[M::mem_process_seqs] Processed 131580 reads in 6.765 CPU sec, 6.645 real sec
+[M::process] read 131580 sequences (10000080 bp)...
+[M::mem_process_seqs] Processed 131580 reads in 6.756 CPU sec, 6.625 real sec
+[M::process] read 131580 sequences (10000080 bp)...
+[M::mem_process_seqs] Processed 131580 reads in 6.705 CPU sec, 6.585 real sec
+[M::process] read 131580 sequences (10000080 bp)...
+[M::mem_process_seqs] Processed 131580 reads in 6.784 CPU sec, 6.650 real sec
+[M::process] read 131580 sequences (10000080 bp)...
+[M::mem_process_seqs] Processed 131580 reads in 7.015 CPU sec, 6.891 real sec
+[M::process] read 131580 sequences (10000080 bp)...
+[M::mem_process_seqs] Processed 131580 reads in 6.883 CPU sec, 6.754 real sec
+[M::process] read 131580 sequences (10000080 bp)...
+[M::mem_process_seqs] Processed 131580 reads in 6.880 CPU sec, 6.758 real sec
+[M::process] read 131580 sequences (10000080 bp)...
+[M::mem_process_seqs] Processed 131580 reads in 6.710 CPU sec, 6.577 real sec
+[M::process] read 131580 sequences (10000080 bp)...
+[M::mem_process_seqs] Processed 131580 reads in 6.758 CPU sec, 6.638 real sec
+[M::process] read 131580 sequences (10000080 bp)...
+[M::mem_process_seqs] Processed 131580 reads in 6.786 CPU sec, 6.654 real sec
+[M::process] read 131580 sequences (10000080 bp)...
+[M::mem_process_seqs] Processed 131580 reads in 6.914 CPU sec, 6.793 real sec
+[M::process] read 12280 sequences (933280 bp)...
+[M::mem_process_seqs] Processed 131580 reads in 6.887 CPU sec, 6.827 real sec
+[M::mem_process_seqs] Processed 12280 reads in 0.712 CPU sec, 0.656 real sec
+[main] Version: 0.7.17-r1188
+[main] CMD: bwa mem -a ./db.human/protozoa/protozoa.ncbi.february.3.2018.fasta /u/home/s/serghei/scratch/test.sbt//C347.TCGA-55-1592-01A-01D-0969-08.1.unmapped.fastq
+[main] Real time: 306.470 sec; CPU: 309.362 sec
+[mpileup] 1 samples in 1 input files
+<mpileup> Set max per-file depth to 8000
+[mpileup] 1 samples in 1 input files
+<mpileup> Set max per-file depth to 8000
+[mpileup] 1 samples in 1 input files
+<mpileup> Set max per-file depth to 8000
+[M::bam2fq_mainloop] processed 46183 reads
+[M::bam2fq_mainloop] processed 20702 reads
+[M::bam2fq_mainloop] processed 8867 reads
+63.0Gb memory in total.
+Using: 56.706Gb.
+MEGAHIT v1.1.3
+--- [Tue Jul  3 19:17:39 2018] Start assembly. Number of CPU threads 16 ---
+--- [Tue Jul  3 19:17:39 2018] Available memory: 67652853760, used: 60887568384
+--- [Tue Jul  3 19:17:39 2018] Converting reads to binaries ---
+    [read_lib_functions-inl.h  : 209]     Lib 0 (/u/home/s/serghei/scratch/test.sbt//C347.TCGA-55-1592-01A-01D-0969-08.1.virus.fastq): se, 46183 reads, 76 max length
+    [utils.h                   : 126]     Real: 0.0944	user: 0.0280	sys: 0.0040	maxrss: 6456
+--- [Tue Jul  3 19:17:39 2018] k list: 21,31,41,51,61,71,81,91,101,111,121,131,141 ---
+--- [Tue Jul  3 19:17:39 2018] Extracting solid (k+1)-mers for k = 21 ---
+--- [Tue Jul  3 19:17:39 2018] Building graph for k = 21 ---
+--- [Tue Jul  3 19:17:40 2018] Assembling contigs from SdBG for k = 21 ---
+--- [Tue Jul  3 19:17:42 2018] Local assembling k = 21 ---
+--- [Tue Jul  3 19:17:42 2018] Extracting iterative edges from k = 21 to 31 ---
+--- [Tue Jul  3 19:17:43 2018] Building graph for k = 31 ---
+--- [Tue Jul  3 19:17:43 2018] Assembling contigs from SdBG for k = 31 ---
+--- [Tue Jul  3 19:17:46 2018] Local assembling k = 31 ---
+--- [Tue Jul  3 19:17:46 2018] Extracting iterative edges from k = 31 to 41 ---
+--- [Tue Jul  3 19:17:46 2018] Building graph for k = 41 ---
+--- [Tue Jul  3 19:17:46 2018] Assembling contigs from SdBG for k = 41 ---
+--- [Tue Jul  3 19:17:47 2018] Local assembling k = 41 ---
+--- [Tue Jul  3 19:17:48 2018] Extracting iterative edges from k = 41 to 51 ---
+--- [Tue Jul  3 19:17:48 2018] Building graph for k = 51 ---
+--- [Tue Jul  3 19:17:48 2018] Assembling contigs from SdBG for k = 51 ---
+--- [Tue Jul  3 19:17:48 2018] Local assembling k = 51 ---
+--- [Tue Jul  3 19:17:48 2018] Extracting iterative edges from k = 51 to 61 ---
+--- [Tue Jul  3 19:17:49 2018] Building graph for k = 61 ---
+--- [Tue Jul  3 19:17:49 2018] Assembling contigs from SdBG for k = 61 ---
+--- [Tue Jul  3 19:17:49 2018] Local assembling k = 61 ---
+--- [Tue Jul  3 19:17:49 2018] Extracting iterative edges from k = 61 to 71 ---
+--- [Tue Jul  3 19:17:49 2018] Building graph for k = 71 ---
+--- [Tue Jul  3 19:17:49 2018] Assembling contigs from SdBG for k = 71 ---
+--- [Tue Jul  3 19:17:50 2018] Local assembling k = 71 ---
+--- [Tue Jul  3 19:17:50 2018] Extracting iterative edges from k = 71 to 81 ---
+--- [Tue Jul  3 19:17:50 2018] Merging to output final contigs ---
+--- [STAT] 4 contigs, total 1053 bp, min 222 bp, max 299 bp, avg 263 bp, N50 290 bp
+--- [Tue Jul  3 19:17:50 2018] ALL DONE. Time elapsed: 11.112254 seconds ---
+[bwa_index] Pack FASTA... 0.00 sec
+[bwa_index] Construct BWT for the packed sequence...
+[bwa_index] 0.00 seconds elapse.
+[bwa_index] Update BWT... 0.00 sec
+[bwa_index] Pack forward-only FASTA... 0.00 sec
+[bwa_index] Construct SA from BWT and Occ... 0.00 sec
+[main] Version: 0.7.17-r1188
+[main] CMD: bwa index /u/home/s/serghei/scratch/test.sbt//C347.TCGA-55-1592-01A-01D-0969-08.1.virus.megahit.contigs.fa
+[main] Real time: 0.021 sec; CPU: 0.003 sec
+[M::bwa_idx_load_from_disk] read 0 ALT contigs
+[M::process] read 131580 sequences (10000080 bp)...
+[M::process] read 131580 sequences (10000080 bp)...
+[M::mem_process_seqs] Processed 131580 reads in 2.589 CPU sec, 2.496 real sec
+[M::process] read 131580 sequences (10000080 bp)...
+[M::mem_process_seqs] Processed 131580 reads in 2.627 CPU sec, 2.494 real sec
+[M::process] read 131580 sequences (10000080 bp)...
+[M::mem_process_seqs] Processed 131580 reads in 2.543 CPU sec, 2.403 real sec
+[M::process] read 131580 sequences (10000080 bp)...
+[M::mem_process_seqs] Processed 131580 reads in 2.545 CPU sec, 2.411 real sec
+[M::process] read 131580 sequences (10000080 bp)...
+[M::mem_process_seqs] Processed 131580 reads in 2.557 CPU sec, 2.416 real sec
+[M::process] read 131580 sequences (10000080 bp)...
+[M::mem_process_seqs] Processed 131580 reads in 2.554 CPU sec, 2.427 real sec
+[M::process] read 131580 sequences (10000080 bp)...
+[M::mem_process_seqs] Processed 131580 reads in 2.526 CPU sec, 2.381 real sec
+[M::process] read 131580 sequences (10000080 bp)...
+[M::mem_process_seqs] Processed 131580 reads in 2.598 CPU sec, 2.468 real sec
+[M::process] read 131580 sequences (10000080 bp)...
+[M::mem_process_seqs] Processed 131580 reads in 2.581 CPU sec, 2.442 real sec
+[M::process] read 131580 sequences (10000080 bp)...
+[M::mem_process_seqs] Processed 131580 reads in 2.618 CPU sec, 2.489 real sec
+[M::process] read 131580 sequences (10000080 bp)...
+[M::mem_process_seqs] Processed 131580 reads in 2.593 CPU sec, 2.453 real sec
+[M::process] read 131580 sequences (10000080 bp)...
+[M::mem_process_seqs] Processed 131580 reads in 2.513 CPU sec, 2.383 real sec
+[M::process] read 131580 sequences (10000080 bp)...
+[M::mem_process_seqs] Processed 131580 reads in 2.561 CPU sec, 2.422 real sec
+[M::process] read 131580 sequences (10000080 bp)...
+[M::mem_process_seqs] Processed 131580 reads in 2.608 CPU sec, 2.482 real sec
+[M::process] read 131580 sequences (10000080 bp)...
+[M::mem_process_seqs] Processed 131580 reads in 2.615 CPU sec, 2.475 real sec
+[M::process] read 131580 sequences (10000080 bp)...
+[M::mem_process_seqs] Processed 131580 reads in 2.594 CPU sec, 2.464 real sec
+[M::process] read 131580 sequences (10000080 bp)...
+[M::mem_process_seqs] Processed 131580 reads in 2.572 CPU sec, 2.433 real sec
+[M::process] read 131580 sequences (10000080 bp)...
+[M::mem_process_seqs] Processed 131580 reads in 2.628 CPU sec, 2.491 real sec
+[M::process] read 131580 sequences (10000080 bp)...
+[M::mem_process_seqs] Processed 131580 reads in 2.598 CPU sec, 2.460 real sec
+[M::process] read 131580 sequences (10000080 bp)...
+[M::mem_process_seqs] Processed 131580 reads in 2.628 CPU sec, 2.497 real sec
+[M::process] read 131580 sequences (10000080 bp)...
+[M::mem_process_seqs] Processed 131580 reads in 2.658 CPU sec, 2.516 real sec
+[M::process] read 131580 sequences (10000080 bp)...
+[M::mem_process_seqs] Processed 131580 reads in 2.643 CPU sec, 2.515 real sec
+[M::process] read 131580 sequences (10000080 bp)...
+[M::mem_process_seqs] Processed 131580 reads in 2.692 CPU sec, 2.548 real sec
+[M::process] read 131580 sequences (10000080 bp)...
+[M::mem_process_seqs] Processed 131580 reads in 2.650 CPU sec, 2.520 real sec
+[M::process] read 131580 sequences (10000080 bp)...
+[M::mem_process_seqs] Processed 131580 reads in 2.637 CPU sec, 2.495 real sec
+[M::process] read 131580 sequences (10000080 bp)...
+[M::mem_process_seqs] Processed 131580 reads in 2.614 CPU sec, 2.486 real sec
+[M::process] read 131580 sequences (10000080 bp)...
+[M::mem_process_seqs] Processed 131580 reads in 2.641 CPU sec, 2.502 real sec
+[M::process] read 131580 sequences (10000080 bp)...
+[M::mem_process_seqs] Processed 131580 reads in 2.628 CPU sec, 2.500 real sec
+[M::process] read 131580 sequences (10000080 bp)...
+[M::mem_process_seqs] Processed 131580 reads in 2.679 CPU sec, 2.540 real sec
+[M::process] read 131580 sequences (10000080 bp)...
+[M::mem_process_seqs] Processed 131580 reads in 2.644 CPU sec, 2.516 real sec
+[M::process] read 131580 sequences (10000080 bp)...
+[M::mem_process_seqs] Processed 131580 reads in 2.611 CPU sec, 2.470 real sec
+[M::process] read 131580 sequences (10000080 bp)...
+[M::mem_process_seqs] Processed 131580 reads in 2.719 CPU sec, 2.584 real sec
+[M::process] read 131580 sequences (10000080 bp)...
+[M::mem_process_seqs] Processed 131580 reads in 2.672 CPU sec, 2.532 real sec
+[M::process] read 131580 sequences (10000080 bp)...
+[M::mem_process_seqs] Processed 131580 reads in 2.602 CPU sec, 2.474 real sec
+[M::process] read 131580 sequences (10000080 bp)...
+[M::mem_process_seqs] Processed 131580 reads in 2.686 CPU sec, 2.549 real sec
+[M::process] read 131580 sequences (10000080 bp)...
+[M::mem_process_seqs] Processed 131580 reads in 2.665 CPU sec, 2.533 real sec
+[M::process] read 131580 sequences (10000080 bp)...
+[M::mem_process_seqs] Processed 131580 reads in 2.652 CPU sec, 2.517 real sec
+[M::process] read 131580 sequences (10000080 bp)...
+[M::mem_process_seqs] Processed 131580 reads in 2.684 CPU sec, 2.557 real sec
+[M::process] read 131580 sequences (10000080 bp)...
+[M::mem_process_seqs] Processed 131580 reads in 2.641 CPU sec, 2.504 real sec
+[M::process] read 131580 sequences (10000080 bp)...
+[M::mem_process_seqs] Processed 131580 reads in 2.648 CPU sec, 2.520 real sec
+[M::process] read 131580 sequences (10000080 bp)...
+[M::mem_process_seqs] Processed 131580 reads in 2.648 CPU sec, 2.506 real sec
+[M::process] read 131580 sequences (10000080 bp)...
+[M::mem_process_seqs] Processed 131580 reads in 2.628 CPU sec, 2.500 real sec
+[M::process] read 131580 sequences (10000080 bp)...
+[M::mem_process_seqs] Processed 131580 reads in 2.604 CPU sec, 2.468 real sec
+[M::process] read 131580 sequences (10000080 bp)...
+[M::mem_process_seqs] Processed 131580 reads in 2.628 CPU sec, 2.500 real sec
+[M::process] read 12286 sequences (933736 bp)...
+[M::mem_process_seqs] Processed 131580 reads in 2.564 CPU sec, 2.499 real sec
+[M::mem_process_seqs] Processed 12286 reads in 0.302 CPU sec, 0.245 real sec
+[main] Version: 0.7.17-r1188
+[main] CMD: bwa mem -a /u/home/s/serghei/scratch/test.sbt//C347.TCGA-55-1592-01A-01D-0969-08.1.virus.megahit.contigs.fa /u/home/s/serghei/scratch/test.sbt//C347.TCGA-55-1592-01A-01D-0969-08.1.cat.unmapped.fastq
+[main] Real time: 112.190 sec; CPU: 118.165 sec
+63.0Gb memory in total.
+Using: 56.706Gb.
+MEGAHIT v1.1.3
+--- [Tue Jul  3 19:19:42 2018] Start assembly. Number of CPU threads 16 ---
+--- [Tue Jul  3 19:19:42 2018] Available memory: 67652853760, used: 60887568384
+--- [Tue Jul  3 19:19:42 2018] Converting reads to binaries ---
+    [read_lib_functions-inl.h  : 209]     Lib 0 (/u/home/s/serghei/scratch/test.sbt//C347.TCGA-55-1592-01A-01D-0969-08.1.fungi.fastq): se, 20702 reads, 76 max length
+    [utils.h                   : 126]     Real: 0.0668	user: 0.0130	sys: 0.0020	maxrss: 6460
+--- [Tue Jul  3 19:19:42 2018] k list: 21,31,41,51,61,71,81,91,101,111,121,131,141 ---
+--- [Tue Jul  3 19:19:43 2018] Extracting solid (k+1)-mers for k = 21 ---
+--- [Tue Jul  3 19:19:43 2018] Building graph for k = 21 ---
+--- [Tue Jul  3 19:19:43 2018] Assembling contigs from SdBG for k = 21 ---
+--- [Tue Jul  3 19:19:45 2018] Local assembling k = 21 ---
+--- [Tue Jul  3 19:19:45 2018] Extracting iterative edges from k = 21 to 31 ---
+--- [Tue Jul  3 19:19:46 2018] Building graph for k = 31 ---
+--- [Tue Jul  3 19:19:46 2018] Assembling contigs from SdBG for k = 31 ---
+--- [Tue Jul  3 19:19:48 2018] Local assembling k = 31 ---
+--- [Tue Jul  3 19:19:48 2018] Extracting iterative edges from k = 31 to 41 ---
+--- [Tue Jul  3 19:19:48 2018] Building graph for k = 41 ---
+--- [Tue Jul  3 19:19:48 2018] Assembling contigs from SdBG for k = 41 ---
+--- [Tue Jul  3 19:19:49 2018] Local assembling k = 41 ---
+--- [Tue Jul  3 19:19:49 2018] Extracting iterative edges from k = 41 to 51 ---
+--- [Tue Jul  3 19:19:49 2018] Building graph for k = 51 ---
+--- [Tue Jul  3 19:19:49 2018] Assembling contigs from SdBG for k = 51 ---
+--- [Tue Jul  3 19:19:49 2018] Local assembling k = 51 ---
+--- [Tue Jul  3 19:19:49 2018] Extracting iterative edges from k = 51 to 61 ---
+--- [Tue Jul  3 19:19:49 2018] Merging to output final contigs ---
+--- [STAT] 0 contigs, total 0 bp, min 0 bp, max 0 bp, avg 0 bp, N50 0 bp
+--- [Tue Jul  3 19:19:49 2018] ALL DONE. Time elapsed: 6.925316 seconds ---
+[bwa_index] Pack FASTA... 0.00 sec
+[gzclose] buffer error
+[E::bwa_idx_load_from_disk] fail to locate the index files
+63.0Gb memory in total.
+Using: 56.706Gb.
+MEGAHIT v1.1.3
+--- [Tue Jul  3 19:19:49 2018] Start assembly. Number of CPU threads 16 ---
+--- [Tue Jul  3 19:19:49 2018] Available memory: 67652853760, used: 60887568384
+--- [Tue Jul  3 19:19:50 2018] Converting reads to binaries ---
+    [read_lib_functions-inl.h  : 209]     Lib 0 (/u/home/s/serghei/scratch/test.sbt//C347.TCGA-55-1592-01A-01D-0969-08.1.protozoa.fastq): se, 8867 reads, 76 max length
+    [utils.h                   : 126]     Real: 0.0308	user: 0.0070	sys: 0.0000	maxrss: 6460
+--- [Tue Jul  3 19:19:50 2018] k list: 21,31,41,51,61,71,81,91,101,111,121,131,141 ---
+--- [Tue Jul  3 19:19:50 2018] Extracting solid (k+1)-mers for k = 21 ---
+--- [Tue Jul  3 19:19:50 2018] Building graph for k = 21 ---
+--- [Tue Jul  3 19:19:50 2018] Assembling contigs from SdBG for k = 21 ---
+--- [Tue Jul  3 19:19:52 2018] Local assembling k = 21 ---
+--- [Tue Jul  3 19:19:52 2018] Extracting iterative edges from k = 21 to 31 ---
+--- [Tue Jul  3 19:19:52 2018] Building graph for k = 31 ---
+--- [Tue Jul  3 19:19:53 2018] Assembling contigs from SdBG for k = 31 ---
+--- [Tue Jul  3 19:19:53 2018] Local assembling k = 31 ---
+--- [Tue Jul  3 19:19:53 2018] Extracting iterative edges from k = 31 to 41 ---
+--- [Tue Jul  3 19:19:54 2018] Building graph for k = 41 ---
+--- [Tue Jul  3 19:19:54 2018] Assembling contigs from SdBG for k = 41 ---
+--- [Tue Jul  3 19:19:54 2018] Local assembling k = 41 ---
+--- [Tue Jul  3 19:19:54 2018] Extracting iterative edges from k = 41 to 51 ---
+--- [Tue Jul  3 19:19:55 2018] Building graph for k = 51 ---
+--- [Tue Jul  3 19:19:55 2018] Assembling contigs from SdBG for k = 51 ---
+--- [Tue Jul  3 19:19:55 2018] Local assembling k = 51 ---
+--- [Tue Jul  3 19:19:55 2018] Extracting iterative edges from k = 51 to 61 ---
+--- [Tue Jul  3 19:19:55 2018] Building graph for k = 61 ---
+--- [Tue Jul  3 19:19:56 2018] Assembling contigs from SdBG for k = 61 ---
+--- [Tue Jul  3 19:19:56 2018] Local assembling k = 61 ---
+--- [Tue Jul  3 19:19:56 2018] Extracting iterative edges from k = 61 to 71 ---
+--- [Tue Jul  3 19:19:56 2018] Merging to output final contigs ---
+--- [STAT] 0 contigs, total 0 bp, min 0 bp, max 0 bp, avg 0 bp, N50 0 bp
+--- [Tue Jul  3 19:19:56 2018] ALL DONE. Time elapsed: 7.018606 seconds ---
+[bwa_index] Pack FASTA... 0.00 sec
+[gzclose] buffer error
+[E::bwa_idx_load_from_disk] fail to locate the index files
+[M::bam2fq_mainloop] processed 49971 reads
+[M::bam2fq_mainloop] processed 0 reads
+[M::bam2fq_mainloop] processed 0 reads
+[M::bam2fq_mainloop] processed 1 reads
+[M::bam2fq_mainloop] processed 2 reads
+[M::bam2fq_mainloop] processed 0 reads
+[M::bam2fq_mainloop] processed 0 reads
+[M::bam2fq_mainloop] processed 3 reads
+[M::bam2fq_mainloop] processed 28 reads
+[M::bam2fq_mainloop] processed 3 reads
+[M::bam2fq_mainloop] processed 0 reads
+[M::bam2fq_mainloop] processed 0 reads
+[M::bam2fq_mainloop] processed 2 reads
+[M::bam2fq_mainloop] processed 0 reads
+[M::bam2fq_mainloop] processed 0 reads
+[M::bam2fq_mainloop] processed 0 reads
+[M::bam2fq_mainloop] processed 2 reads
+[M::bam2fq_mainloop] processed 2 reads
+[M::bam2fq_mainloop] processed 0 reads
+[M::bam2fq_mainloop] processed 1 reads
+[M::bam2fq_mainloop] processed 4 reads
+[M::bam2fq_mainloop] processed 6 reads
+[M::bam2fq_mainloop] processed 4 reads
+[M::bam2fq_mainloop] processed 2 reads
+[M::bam2fq_mainloop] processed 0 reads
+[M::bam2fq_mainloop] processed 1 reads
+[M::bam2fq_mainloop] processed 1 reads
+[M::bam2fq_mainloop] processed 0 reads
+[M::bam2fq_mainloop] processed 2 reads
+[M::bam2fq_mainloop] processed 0 reads
+[M::bam2fq_mainloop] processed 8 reads
+[M::bam2fq_mainloop] processed 4 reads
+[M::bam2fq_mainloop] processed 4 reads
+[M::bam2fq_mainloop] processed 1 reads
+[M::bam2fq_mainloop] processed 2 reads
+[M::bam2fq_mainloop] processed 6 reads
+[M::bam2fq_mainloop] processed 7 reads
+[M::bam2fq_mainloop] processed 8 reads
+[M::bam2fq_mainloop] processed 3 reads
+[M::bam2fq_mainloop] processed 13 reads
+[M::bam2fq_mainloop] processed 9 reads
+[M::bam2fq_mainloop] processed 4 reads
+[M::bam2fq_mainloop] processed 2 reads
+[M::bam2fq_mainloop] processed 1 reads
+[M::bam2fq_mainloop] processed 2 reads
+[M::bam2fq_mainloop] processed 2 reads
+[M::bam2fq_mainloop] processed 0 reads
+[M::bam2fq_mainloop] processed 5 reads
+[M::bam2fq_mainloop] processed 3 reads
+[M::bam2fq_mainloop] processed 263 reads
+[M::bam2fq_mainloop] processed 0 reads
+[M::bam2fq_mainloop] processed 1 reads
+[M::bam2fq_mainloop] processed 0 reads
+[M::bam2fq_mainloop] processed 9 reads
+[M::bam2fq_mainloop] processed 0 reads
+[M::bam2fq_mainloop] processed 0 reads
+[M::bam2fq_mainloop] processed 14 reads
+[M::bam2fq_mainloop] processed 311 reads
+[M::bam2fq_mainloop] processed 470 reads
+[M::bam2fq_mainloop] processed 365 reads
+[M::bam2fq_mainloop] processed 875 reads
+[M::bam2fq_mainloop] processed 602 reads
+[M::bam2fq_mainloop] processed 238 reads
+[M::bam2fq_mainloop] processed 294 reads
+[M::bam2fq_mainloop] processed 0 reads
+[M::bam2fq_mainloop] processed 0 reads
+[M::bam2fq_mainloop] processed 0 reads
+[M::bam2fq_mainloop] processed 1 reads
+[M::bam2fq_mainloop] processed 1 reads
+[M::bam2fq_mainloop] processed 1 reads
+[M::bam2fq_mainloop] processed 46 reads
+[M::bam2fq_mainloop] processed 1 reads
+[M::bam2fq_mainloop] processed 0 reads
+[M::bam2fq_mainloop] processed 7 reads
+[M::bam2fq_mainloop] processed 2 reads
+[main_samview] region "228743523:" specifies an unknown reference name. Continue anyway.
+[main_samview] region "228781906-" specifies an unknown reference name. Continue anyway.
+[M::bam2fq_mainloop] processed 0 reads
+[M::bam2fq_mainloop] processed 161933 reads
+[M::bam2fq_mainloop] processed 48 reads
+[M::bam2fq_mainloop] processed 8 reads
+[M::bam2fq_mainloop] processed 2 reads
+[M::bam2fq_mainloop] processed 4 reads
+[M::bam2fq_mainloop] processed 0 reads
+[M::bam2fq_mainloop] processed 2 reads
+[M::bam2fq_mainloop] processed 213 reads
+[M::bam2fq_mainloop] processed 0 reads
+[M::bam2fq_mainloop] processed 3 reads
+[M::bam2fq_mainloop] processed 6 reads
+[M::bam2fq_mainloop] processed 6 reads
+[M::bam2fq_mainloop] processed 4 reads
+[M::bam2fq_mainloop] processed 4 reads
+[M::bam2fq_mainloop] processed 0 reads
+[M::bam2fq_mainloop] processed 1 reads
+[M::bam2fq_mainloop] processed 1 reads
+[M::bam2fq_mainloop] processed 4 reads
+[M::bam2fq_mainloop] processed 8 reads
+[M::bam2fq_mainloop] processed 508 reads
+[M::bam2fq_mainloop] processed 1394 reads
+[M::bam2fq_mainloop] processed 677 reads
+[M::bam2fq_mainloop] processed 1302 reads
+[M::bam2fq_mainloop] processed 4088 reads
+[M::bam2fq_mainloop] processed 1653 reads
+[M::bam2fq_mainloop] processed 7 reads
+[M::bam2fq_mainloop] processed 0 reads
+[M::bam2fq_mainloop] processed 0 reads
+[M::bam2fq_mainloop] processed 7 reads
+[M::bam2fq_mainloop] processed 0 reads
+[M::bam2fq_mainloop] processed 3 reads
+[M::bam2fq_mainloop] processed 9 reads
+[M::bam2fq_mainloop] processed 0 reads
+[M::bam2fq_mainloop] processed 4 reads
+[M::bam2fq_mainloop] processed 1 reads
+[M::bam2fq_mainloop] processed 0 reads
+[M::bam2fq_mainloop] processed 2 reads
+[M::bam2fq_mainloop] processed 18 reads
+[M::bam2fq_mainloop] processed 4 reads
+[M::bam2fq_mainloop] processed 2 reads
+[M::bam2fq_mainloop] processed 2 reads
+[M::bam2fq_mainloop] processed 1 reads
+[M::bam2fq_mainloop] processed 3 reads
+[M::bam2fq_mainloop] processed 0 reads
+[M::bam2fq_mainloop] processed 6 reads
+[M::bam2fq_mainloop] processed 4 reads
+[M::bam2fq_mainloop] processed 0 reads
+[M::bam2fq_mainloop] processed 0 reads
+[M::bam2fq_mainloop] processed 0 reads
+[M::bam2fq_mainloop] processed 12 reads
+[M::bam2fq_mainloop] processed 0 reads
+[M::bam2fq_mainloop] processed 7 reads
+[M::bam2fq_mainloop] processed 0 reads
+[M::bam2fq_mainloop] processed 2 reads
+[M::bam2fq_mainloop] processed 7 reads
+[M::bam2fq_mainloop] processed 6 reads
+[M::bam2fq_mainloop] processed 7 reads
+[M::bam2fq_mainloop] processed 7 reads
+[M::bam2fq_mainloop] processed 4 reads
+[M::bam2fq_mainloop] processed 28 reads
+[M::bam2fq_mainloop] processed 6 reads
+[M::bam2fq_mainloop] processed 4 reads
+[M::bam2fq_mainloop] processed 0 reads
+[M::bam2fq_mainloop] processed 0 reads
+[M::bam2fq_mainloop] processed 1 reads
+[M::bam2fq_mainloop] processed 2 reads
+[M::bam2fq_mainloop] processed 1 reads
+[M::bam2fq_mainloop] processed 0 reads
+[M::bam2fq_mainloop] processed 0 reads
+[M::bam2fq_mainloop] processed 8 reads
+[M::bam2fq_mainloop] processed 2 reads
+[M::bam2fq_mainloop] processed 0 reads
+[M::bam2fq_mainloop] processed 0 reads
+[M::bam2fq_mainloop] processed 2 reads
+[M::bam2fq_mainloop] processed 0 reads
+[M::bam2fq_mainloop] processed 8 reads
+[M::bam2fq_mainloop] processed 0 reads
+[M::bam2fq_mainloop] processed 2 reads
+6159058 reads; of these:
+  6159058 (100.00%) were unpaired; of these:
+    6106129 (99.14%) aligned 0 times
+    48891 (0.79%) aligned exactly 1 time
+    4038 (0.07%) aligned >1 times
+0.86% overall alignment rate
+[mpileup] 1 samples in 1 input files
+<mpileup> Set max per-file depth to 8000
+[mplp_func] Skipping because 42891 is outside of 42881 [ref:2]
+[mplp_func] Skipping because 42891 is outside of 42881 [ref:2]
+[mplp_func] Skipping because 42895 is outside of 42881 [ref:2]
+[mplp_func] Skipping because 42895 is outside of 42881 [ref:2]
+[mplp_func] Skipping because 42895 is outside of 42881 [ref:2]
+[mplp_func] Skipping because 42895 is outside of 42881 [ref:2]
+[mplp_func] Skipping because 42895 is outside of 42881 [ref:2]
+[mplp_func] Skipping because 42898 is outside of 42881 [ref:2]
+[mplp_func] Skipping because 42900 is outside of 42881 [ref:2]
+[mplp_func] Skipping because 42901 is outside of 42881 [ref:2]
+[mplp_func] Skipping because 42901 is outside of 42881 [ref:2]
+[mplp_func] Skipping because 42901 is outside of 42881 [ref:2]
+[mplp_func] Skipping because 42904 is outside of 42881 [ref:2]
+[mplp_func] Skipping because 42906 is outside of 42881 [ref:2]
+[mplp_func] Skipping because 42911 is outside of 42881 [ref:2]
+[mplp_func] Skipping because 42911 is outside of 42881 [ref:2]
+[mplp_func] Skipping because 42913 is outside of 42881 [ref:2]
+[mplp_func] Skipping because 42925 is outside of 42881 [ref:2]
+[mplp_func] Skipping because 42925 is outside of 42881 [ref:2]
+[mpileup] 1 samples in 1 input files
+Note: none of --samples-file, --ploidy or --ploidy-file given, assuming all sites are diploid
+<mpileup> Set max per-file depth to 8000
+[mplp_func] Skipping because 42891 is outside of 42881 [ref:2]
+[mplp_func] Skipping because 42891 is outside of 42881 [ref:2]
+[mplp_func] Skipping because 42895 is outside of 42881 [ref:2]
+[mplp_func] Skipping because 42895 is outside of 42881 [ref:2]
+[mplp_func] Skipping because 42895 is outside of 42881 [ref:2]
+[mplp_func] Skipping because 42895 is outside of 42881 [ref:2]
+[mplp_func] Skipping because 42895 is outside of 42881 [ref:2]
+[mplp_func] Skipping because 42898 is outside of 42881 [ref:2]
+[mplp_func] Skipping because 42900 is outside of 42881 [ref:2]
+[mplp_func] Skipping because 42901 is outside of 42881 [ref:2]
+[mplp_func] Skipping because 42901 is outside of 42881 [ref:2]
+[mplp_func] Skipping because 42901 is outside of 42881 [ref:2]
+[mplp_func] Skipping because 42904 is outside of 42881 [ref:2]
+[mplp_func] Skipping because 42906 is outside of 42881 [ref:2]
+[mplp_func] Skipping because 42911 is outside of 42881 [ref:2]
+[mplp_func] Skipping because 42911 is outside of 42881 [ref:2]
+[mplp_func] Skipping because 42913 is outside of 42881 [ref:2]
+[mplp_func] Skipping because 42925 is outside of 42881 [ref:2]
+[mplp_func] Skipping because 42925 is outside of 42881 [ref:2]
+[M::bam2fq_mainloop] processed 22577 reads
+5955957 reads; of these:
+  5955957 (100.00%) were unpaired; of these:
+    5933872 (99.63%) aligned 0 times
+    22085 (0.37%) aligned exactly 1 time
+    0 (0.00%) aligned >1 times
+0.37% overall alignment rate
+[mpileup] 1 samples in 1 input files
+<mpileup> Set max per-file depth to 8000
+[mpileup] 1 samples in 1 input files
+Note: none of --samples-file, --ploidy or --ploidy-file given, assuming all sites are diploid
+<mpileup> Set max per-file depth to 8000

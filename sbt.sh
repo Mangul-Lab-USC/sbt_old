@@ -9,11 +9,62 @@ parser.add_argument('-hg38', '--hg38', action='store_true',
 parser.add_argument('-RNASeq', '--RNASeq', action='store_true',
                     default=False, help=' Choose this option, if it is a RNA-Seq data[default %(default)s]')
 
+parser.add_argument('-steps', '--steps', default='all', type=int,
+                    help='Select steps [default %(default)s]')
+parser.add_argument('-f', '--forse', action='store_true', default=False,
+                    help='Forse [default %(default)s]')
+
 EOF
 
 echo required infile: "$INFILE"
 echo required outfile: "$OUTFILE"
 echo $HG38
+
+
+# Add MiniConda to PATH if it's available.
+if [ -d "$DIR/tools/MiniConda/bin" ]; then
+    export PATH="$DIR/tools/MiniConda/bin:$PATH"
+fi
+
+
+# Add all steps if selected.
+if [ "$STEPS" = 'all' ]; then
+    STEPS='lowq rdna reference repeats circrna immune microbiome'
+fi
+
+# Convert to absolute paths.
+BAM=`readlink -m "$BAM"`
+OUTPUTDIR=`readlink -m "$OUTPUTDIR"`
+
+# Check if BAM exists.
+if [ ! -e "$BAM" ]; then
+    echo "Error: $BAM doesn't exist." >&2
+    exit 1
+fi
+
+# Check if OUTPUTDIR exists, then make it.
+if [ -d "$OUTPUTDIR" ]; then
+    if [ $FORCE = true ]; then
+        rm -fr "$OUTPUTDIR"
+    else
+        echo "Error: The directory $OUTPUTDIR exists. Please choose a" \
+            'different directory in which to save results of the analysis, or' \
+            'use the -f option to overwrite the directory.' >&2
+        exit 1
+    fi
+fi
+mkdir -p "$OUTPUTDIR"
+
+
+
+# Perform lazy native installation if needed.
+if [ ! -h "$DB" ] && [ ! -d "$DB" ]; then
+    echo 'Performing a lazy native installation. This might take some time.' >&2
+    cd "$DIR"
+    ./install.sh
+fi
+
+
 
 start=`date +%s`
 
@@ -21,6 +72,7 @@ echo  "Start. "$start
 
 . /u/local/Modules/default/init/modules.sh
 module load bowtie2
+module load bwa
 samtools=/u/home/s/serghei/collab/code/rop.old/tools/samtools
 bam=$1
 prefix=$(basename $bam | awk -F ".bam" '{print $1}')
@@ -73,26 +125,32 @@ $samtools fastq ${SAMPLE}.protozoa.bam >${SAMPLE}.protozoa.fastq
 
 $megahit --k-step 10 -r ${SAMPLE}.virus.fastq -o ${SAMPLE}.virus.megahit --out-prefix ${prefix}.virus.megahit
 mv ${SAMPLE}.virus.megahit/${prefix}.virus.megahit.contigs.fa ${DIR}
-bwa index ${prefix}.virus.megahit.contigs.fa
-gzip ${prefix}.virus.megahit.contigs.fa
+bwa index ${DIR}/${prefix}.virus.megahit.contigs.fa
 rm -fr ${SAMPLE}.virus.megahit
-bwa mem -a ${prefix}.virus.megahit.contigs.fa ${SAMPLE}.cat.unmapped.fastq | $samtools view -S -b -F 4 - | $samtools sort - >${SAMPLE}.viral.megahit.bam
+ 
+
+bwa mem -a ${DIR}/${prefix}.virus.megahit.contigs.fa ${SAMPLE}.cat.unmapped.fastq | $samtools view -S -b -F 4 - | $samtools sort - >${SAMPLE}.viral.megahit.bam
+
+
+
+gzip ${DIR}/${prefix}.virus.megahit.contigs.fa
+
 
 
 $megahit --k-step 10 -r ${SAMPLE}.fungi.fastq -o ${SAMPLE}.fungi.megahit --out-prefix ${prefix}.fungi.megahit
 mv ${SAMPLE}.fungi.megahit/${prefix}.fungi.megahit.contigs.fa ${DIR}
-bwa index ${prefix}.fungi.megahit.contigs.fa
-gzip ${prefix}.fungi.megahit.contigs.fa
+bwa index ${DIR}/${prefix}.fungi.megahit.contigs.fa
 rm -fr ${SAMPLE}.fungi.megahit
-bwa mem -a ${prefix}.fungi.megahit.contigs.fa ${SAMPLE}.unmapped.fastq | $samtools view -S -b -F 4 - | $samtools sort - >${SAMPLE}.fungi.megahit.bam
-
+bwa mem -a ${DIR}/${prefix}.fungi.megahit.contigs.fa ${SAMPLE}.unmapped.fastq | $samtools view -S -b -F 4 - | $samtools sort - >${SAMPLE}.fungi.megahit.bam
+gzip ${DIR}/${prefix}.fungi.megahit.contigs.fa
 
 $megahit --k-step 10 -r ${SAMPLE}.protozoa.fastq -o ${SAMPLE}.protozoa.megahit --out-prefix ${prefix}.protozoa.megahit
 mv ${SAMPLE}.protozoa.megahit/${prefix}.protozoa.megahit.contigs.fa ${DIR}
-bwa  index ${prefix}.protozoa.megahit.contigs.fa
-gzip ${prefix}.protozoa.megahit.contigs.fa
+bwa  index ${DIR}/${prefix}.protozoa.megahit.contigs.fa
 rm -fr ${SAMPLE}.protozoa.megahit
-bwa mem -a ${prefix}.protozoa.megahit.contigs.fa ${SAMPLE}.unmapped.fastq | $samtools view -S -b -F 4 - | $samtools sort - >${SAMPLE}.protozoa.megahit.bam
+bwa mem -a ${DIR}/${prefix}.protozoa.megahit.contigs.fa ${SAMPLE}.unmapped.fastq | $samtools view -S -b -F 4 - | $samtools sort - >${SAMPLE}.protozoa.megahit.bam
+
+gzip ${DIR}/${prefix}.protozoa.megahit.contigs.fa
 
 
 rm -fr ${SAMPLE}.virus.fastq
@@ -106,7 +164,6 @@ echo "--------------------------------------------------------------------------
 echo "Extract reads from GL000220.1 and save to "${SAMPLE}.GL000220.fastq
 $samtools view -bh ${bam} GL000220.1 | $samtools bam2fq - >${SAMPLE}.GL000220.fastq
 
-rm -fr ${SAMPLE}.rDNA.mapped.fastq
 if [[ $HG38 ]]; then
     echo "hg38 release was used!"
     bed=${DIR_CODE}/homologs/rDNA.homology.bed
@@ -133,7 +190,7 @@ module load bcftools
 cat ${SAMPLE}.unmapped.fastq ${SAMPLE}.GL000220.fastq ${SAMPLE}.rDNA.mapped.fastq >${SAMPLE}.cat.rDNA.fastq
 bowtie2  -x ${DIR_CODE}/db.human/rDNA --end-to-end ${SAMPLE}.cat.rDNA.fastq | $samtools view -F 4 -bh - | $samtools sort - >${SAMPLE}.sort.rDNA.bam
 $samtools index ${SAMPLE}.sort.rDNA.bam
-$samtools mpileup -f  ${DIR_CODE}/db.human/rDNA.fasta ${SAMPLE}.sort.rDNA.bam | gzip - >${SAMPLE}.rDNA.pileup.gzip
+$samtools mpileup -f  ${DIR_CODE}/db.human/rDNA.fasta ${SAMPLE}.sort.rDNA.bam | gzip - >${SAMPLE}.rDNA.pileup.gz
 $samtools mpileup -uf ${DIR_CODE}/db.human/rDNA.fasta ${SAMPLE}.sort.rDNA.bam | bcftools  call -mv -Oz >${SAMPLE}.rDNA.bcf
 rm -fr ${SAMPLE}.sort.rDNA.bam
 rm -fr ${SAMPLE}.cat.rDNA.fastq ${SAMPLE}.GL000220.fastq ${SAMPLE}.rDNA.mapped.fastq ${SAMPLE}.sort.rDNA.fastq 
@@ -144,8 +201,15 @@ rm -fr ${SAMPLE}.cat.rDNA.fastq ${SAMPLE}.GL000220.fastq ${SAMPLE}.rDNA.mapped.f
 echo "---------------------------------------------------------------------------"
 echo "MT"
 
-$samtools view -bh $bam MT  >${SAMPLE}.MT.bam
-$samtools mpileup -f ${DIR_CODE}/db.human/MT.fasta ${SAMPLE}.sort.MT.bam | gzip - >${SAMPLE}.MT.pileup.gzip
+$samtools view -bh $bam MT | $samtools fastq - >${SAMPLE}.MT.fastq
+cat ${SAMPLE}.MT.fastq ${SAMPLE}.unmapped.fastq >${SAMPLE}.cat.MT.fastq
+
+bowtie2  -x ${DIR_CODE}/db.human/MT --end-to-end ${SAMPLE}.cat.MT.fastq | $samtools view -F 4 -bh - | $samtools sort - >${SAMPLE}.sort.MT.bam
+
+$samtools index ${SAMPLE}.sort.MT.bam
+
+
+$samtools mpileup -f ${DIR_CODE}/db.human/MT.fasta ${SAMPLE}.sort.MT.bam | gzip - >${SAMPLE}.MT.pileup.gz
 $samtools mpileup -uf ${DIR_CODE}/db.human/MT.fasta ${SAMPLE}.sort.MT.bam | bcftools  call -mv -Oz >${SAMPLE}.MT.bcf
 
 
@@ -154,11 +218,14 @@ rm -fr ${SAMPLE}.cat.MT.fastq ${SAMPLE}.sort.MT.fastq
 rm -fr ${SAMPLE}.MT.fastq
 
 
+exit 1
 
 # --------------------------------------------------------
+
 #6 extrcat TCR/BCR reads run imrep
 echo "---------------------------------------------------------------------------"
 echo "extract immune reads and map to VDJ ref"
+
 
 
 if [[ $HG38 ]]; then
@@ -242,7 +309,6 @@ if [[ $RNASEQ ]]; then
 echo "Step Get off target coverage is skipped"
 else
 
-echo "0. Get off target coverage this is ONLy for hg19. Needs to be changed"
 
 while read line
 do
