@@ -1,0 +1,8 @@
+syntax: glob
+
+metaphlan_databases/
+tests/
+*.pyc
+build/
+dist/
+*.egg-info/

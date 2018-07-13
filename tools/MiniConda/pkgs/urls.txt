@@ -1,0 +1,17 @@
+https://repo.continuum.io/pkgs/free/linux-64/_cache-0.0-py27_x0.tar.bz2
+https://repo.continuum.io/pkgs/free/linux-64/python-2.7.11-0.tar.bz2
+https://repo.continuum.io/pkgs/free/linux-64/conda-env-2.4.5-py27_0.tar.bz2
+https://repo.continuum.io/pkgs/free/linux-64/openssl-1.0.2g-0.tar.bz2
+https://repo.continuum.io/pkgs/free/linux-64/pycosat-0.6.1-py27_0.tar.bz2
+https://repo.continuum.io/pkgs/free/linux-64/pyyaml-3.11-py27_1.tar.bz2
+https://repo.continuum.io/pkgs/free/linux-64/readline-6.2-2.tar.bz2
+https://repo.continuum.io/pkgs/free/linux-64/requests-2.9.1-py27_0.tar.bz2
+https://repo.continuum.io/pkgs/free/linux-64/sqlite-3.9.2-0.tar.bz2
+https://repo.continuum.io/pkgs/free/linux-64/tk-8.5.18-0.tar.bz2
+https://repo.continuum.io/pkgs/free/linux-64/yaml-0.1.6-0.tar.bz2
+https://repo.continuum.io/pkgs/free/linux-64/zlib-1.2.8-0.tar.bz2
+https://repo.continuum.io/pkgs/free/linux-64/conda-4.0.5-py27_0.tar.bz2
+https://repo.continuum.io/pkgs/free/linux-64/pycrypto-2.6.1-py27_0.tar.bz2
+https://repo.continuum.io/pkgs/free/linux-64/pip-8.1.1-py27_1.tar.bz2
+https://repo.continuum.io/pkgs/free/linux-64/wheel-0.29.0-py27_0.tar.bz2
+https://repo.continuum.io/pkgs/free/linux-64/setuptools-20.3-py27_0.tar.bz2

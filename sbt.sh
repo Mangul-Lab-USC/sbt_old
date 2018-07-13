@@ -27,14 +27,9 @@ if [ -d "$DIR/tools/MiniConda/bin" ]; then
 fi
 
 
-# Add all steps if selected.
-if [ "$STEPS" = 'all' ]; then
-    STEPS='lowq rdna reference repeats circrna immune microbiome'
-fi
-
 # Convert to absolute paths.
 BAM=`readlink -m "$BAM"`
-OUTPUTDIR=`readlink -m "$OUTPUTDIR"`
+OUTPUTDIR=`readlink -m "$OUTDIR"`
 
 # Check if BAM exists.
 if [ ! -e "$BAM" ]; then
@@ -42,12 +37,12 @@ if [ ! -e "$BAM" ]; then
     exit 1
 fi
 
-# Check if OUTPUTDIR exists, then make it.
-if [ -d "$OUTPUTDIR" ]; then
+# Check if OUTDIR exists, then make it.
+if [ -d "$OUTDIR" ]; then
     if [ $FORCE = true ]; then
-        rm -fr "$OUTPUTDIR"
+        rm -fr "$OUTDIR"
     else
-        echo "Error: The directory $OUTPUTDIR exists. Please choose a" \
+        echo "Error: The directory $OUTDIR exists. Please choose a" \
             'different directory in which to save results of the analysis, or' \
             'use the -f option to overwrite the directory.' >&2
         exit 1
@@ -57,29 +52,17 @@ mkdir -p "$OUTPUTDIR"
 
 
 
-# Perform lazy native installation if needed.
-if [ ! -h "$DB" ] && [ ! -d "$DB" ]; then
-    echo 'Performing a lazy native installation. This might take some time.' >&2
-    cd "$DIR"
-    ./install.sh
-fi
-
-
 
 start=`date +%s`
 
 echo  "Start. "$start
 
-. /u/local/Modules/default/init/modules.sh
-module load bowtie2
-module load bwa
-samtools=/u/home/s/serghei/collab/code/rop.old/tools/samtools
-bam=$1
-prefix=$(basename $bam | awk -F ".bam" '{print $1}')
-DIR=$2
-mkdir $DIR
+
+prefix=$(basename $BAM | awk -F ".bam" '{print $1}')
 SAMPLE=$DIR"/"${prefix}
 DIR_CODE=$(dirname $0)
+
+#install them eventually
 megahit=/u/home/n/nlapier2/lib/megahit_v1.1.3_LINUX_CPUONLY_x86_64-bin/megahit
 metaphlan=/u/home/s/serghei//collab/code/rop/tools/metaphlan2/metaphlan2.py
 imrep=/u/home/s/serghei//collab/code/imrep/imrep.py
@@ -92,15 +75,13 @@ rm -fr ${SAMPLE}.offtarget.cov
 
 
 
-#1. Extract unmapped reads
 echo "---------------------------------------------------------------------------"
-echo "Extract unmapped reads from " $1
-echo "$samtools view -f 0x4 -bh $bam | $samtools bam2fq - >${SAMPLE}.unmapped.fastq"
-$samtools view -f 0x4 -bh $bam | $samtools bam2fq - >${SAMPLE}.unmapped.fastq
+echo "1. Extract unmapped reads from " $BAM
+samtools view -f 0x4 -bh $BAM | samtools bam2fq - >${SAMPLE}.unmapped.fastq
 
 
-#megahit
-$samtools view -bh $bam NC_007605 | $samtools fastq - > ${SAMPLE}.NC_007605.fastq
+#megahit virus
+samtools view -bh $bam NC_007605 | $samtools fastq - > ${SAMPLE}.NC_007605.fastq
 cat ${SAMPLE}.unmapped.fastq ${SAMPLE}.NC_007605.fastq>${SAMPLE}.cat.unmapped.fastq
 
 

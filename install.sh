@@ -1,3 +1,14 @@
+#!/bin/bash
+
+source $(dirname $0)/argparse.bash || exit 1
+argparse "$@" <<EOF || exit 1
+parser.add_argument('-r', '--forse', action='store_true', default=False,
+help='Forse [default %(default)s]')
+
+EOF
+
+
+
 DIR=`dirname $(readlink -f "$0")`
 
 # Set default options.
@@ -7,7 +18,10 @@ NATIVE=false
 REINSTALL=false
 
 
-echo $1
+if [[ $FORSE ]]
+then
+REINSTALL=true
+fi
 
 
 
@@ -16,6 +30,10 @@ echo $1
 # ------------------------------------------------------------------------------
 
 cd "$DIR/tools"
+
+pwd
+ls
+echo $REINSTALL
 
 # Skip this section if neither -c nor -r are selected and there is a previous
 # installation (as indicated by the presence of the imrep directory).
@@ -38,12 +56,19 @@ else
     ./install.sh
     cd ..
 
+    #Download megahit
+    echo '----- Downloading Megahit --------------------------------------------------'
+    git clone https://github.com/voutcn/megahit.git
+    cd megahit
+    make
+    cd ..
+
     # Download MetaPhlAn 2.
-    #echo '----- Downloading MetaPhlAn 2 --------------------------------------------------'
-    #hg clone https://bitbucket.org/biobakery/metaphlan2
-    #cd metaphlan2
-    #ln -s ../../db_human/databases
-    #cd ..
+    echo '----- Downloading MetaPhlAn 2 --------------------------------------------------'
+    hg clone https://bitbucket.org/biobakery/metaphlan2
+    cd metaphlan2
+    ln -s ../../db_human/databases
+    cd ..
 
     # Download MiniConda and add shebangs.
     echo '----- Setting up Python environment --------------------------------------------'
