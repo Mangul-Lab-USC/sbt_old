@@ -1,7 +1,0 @@
-pkg: python-2.7.11
-dist: python-2.7.11-0
-home: http://www.python.org/
-license: PSF
-has_bin: True
-has_lib: True
-has_py: False
