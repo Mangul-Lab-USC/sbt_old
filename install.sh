@@ -55,6 +55,21 @@ if [ $REINSTALL ]
 then
 echo '----- Removing previous versions -----------------------------------------------'
 rm -fr imrep metaphlan2 MiniConda needle ichorCNA
+fi
+
+
+if [ -d 'imrep' ]
+then
+echo 'Existing installation found. Skipping tools download. To reinstall, please use the -r option.'
+else
+
+if [ $REINSTALL ]
+then
+echo '----- Removing previous versions -----------------------------------------------'
+rm -fr imrep metaphlan2 MiniConda needle ichorCNA
+fi
+
+
 
 # Download ImReP.
 echo '----- Downloading ImRep --------------------------------------------------------'
@@ -97,13 +112,15 @@ cd MiniConda/bin/
 cd ../..
 MiniConda="$PWD/MiniConda/bin/python"
 fi
+
+
 fi
 
 
 ##################   DB   ##################
 
 echo "Download databases"
-cd $DIR
+cd $DIR/db_${ORGANISM}/
 
 
 download_list=$'metaphlan'
