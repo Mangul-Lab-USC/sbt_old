@@ -1,0 +1,102 @@
+BLASTN 2.7.1+
+
+
+Reference: Zheng Zhang, Scott Schwartz, Lukas Wagner, and Webb
+Miller (2000), "A greedy algorithm for aligning DNA sequences", J
+Comput Biol 2000; 7(1-2):203-14.
+
+
+
+Database: Nucleotide collection (nt)
+           48,079,052 sequences; 199,254,955,624 total letters
+
+
+
+Query= k21_2 flag=1 multi=2.0000 len=665
+
+Length=665
+
+RID: UP1ZYAVY014
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+FR796397.1  Leishmania major strain Friedlin complete genome, chr...  1229    0.0  
+
+
+>FR796397.1 Leishmania major strain Friedlin complete genome, chromosome 
+1
+Length=268986
+
+ Score = 1229 bits (665),  Expect = 0.0
+ Identities = 665/665 (100%), Gaps = 0/665 (0%)
+ Strand=Plus/Minus
+
+Query  1    CACCTTTTCTGCCTCGTGTTTTGCCGTCTCACGAGGAAACACTGAAAACAACAAAAAATA  60
+            ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  825  CACCTTTTCTGCCTCGTGTTTTGCCGTCTCACGAGGAAACACTGAAAACAACAAAAAATA  766
+
+Query  61   TCACCCGGCTCCTCTTGTGCCGCGGTACCTCGGATCTGGTGCATTTATCTCCTCGGCTCA  120
+            ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  765  TCACCCGGCTCCTCTTGTGCCGCGGTACCTCGGATCTGGTGCATTTATCTCCTCGGCTCA  706
+
+Query  121  TCTCTTCCCAGTCTGAGAGACTTCCCTTTTTCTCACTGCTCGTTTTCGGTCGGTGCTAAT  180
+            ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  705  TCTCTTCCCAGTCTGAGAGACTTCCCTTTTTCTCACTGCTCGTTTTCGGTCGGTGCTAAT  646
+
+Query  181  TGCGTCCGCGTGGGCGTTGGCTTTCCGCTTCCCACCCGCCGCCCTCCTTGCTTTGGGTGA  240
+            ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  645  TGCGTCCGCGTGGGCGTTGGCTTTCCGCTTCCCACCCGCCGCCCTCCTTGCTTTGGGTGA  586
+
+Query  241  GGAGTTTTCGCATAAAAAGGGGTGGGCTCTCCCTCCTTGTTCTATAGCGCACAATCTATC  300
+            ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  585  GGAGTTTTCGCATAAAAAGGGGTGGGCTCTCCCTCCTTGTTCTATAGCGCACAATCTATC  526
+
+Query  301  AGAAAGCCTTCAGCCCTCGTTGTGGAAACAAACAGCGTTGCAGTCACATCGCTGGCTGAT  360
+            ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  525  AGAAAGCCTTCAGCCCTCGTTGTGGAAACAAACAGCGTTGCAGTCACATCGCTGGCTGAT  466
+
+Query  361  CGGCGATCGCCGTGGGCGGTCGATGCAGTTCCATGCCCTCCATCCGGGGCACGCGCTTAC  420
+            ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  465  CGGCGATCGCCGTGGGCGGTCGATGCAGTTCCATGCCCTCCATCCGGGGCACGCGCTTAC  406
+
+Query  421  GCAGACAGATGTACGATTGAAGATTATCGGTGGCTAGTGCCTACCCTGTTTTCCGATCAA  480
+            ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  405  GCAGACAGATGTACGATTGAAGATTATCGGTGGCTAGTGCCTACCCTGTTTTCCGATCAA  346
+
+Query  481  CGTGTATAATACGAGGCAGAAAAGGAGAGCTAGAGGGTGCGAGTACTCGATGGGTCACCT  540
+            ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  345  CGTGTATAATACGAGGCAGAAAAGGAGAGCTAGAGGGTGCGAGTACTCGATGGGTCACCT  286
+
+Query  541  CCTCTTTGGTACACCGACGCGGCTTGACGCTGTGAAACCAACGACAGCACACGTAGCTGC  600
+            ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  285  CCTCTTTGGTACACCGACGCGGCTTGACGCTGTGAAACCAACGACAGCACACGTAGCTGC  226
+
+Query  601  GTTTTTCCCTTTTTTTCATGTCCGCACGTTTATCAAAGAGCATTGTGCGTGTTCTTCTGC  660
+            ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  225  GTTTTTCCCTTTTTTTCATGTCCGCACGTTTATCAAAGAGCATTGTGCGTGTTCTTCTGC  166
+
+Query  661  TGAAG  665
+            |||||
+Sbjct  165  TGAAG  161
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 124470478946520
+
+
+  Database: Nucleotide collection (nt)
+    Posted date:  Sep 21, 2018 10:54 PM
+  Number of letters in database: 199,254,955,624
+  Number of sequences in database:  48,079,052
+
+
+
+Matrix: blastn matrix 1 -2
+Gap Penalties: Existence: 0, Extension: 2.5

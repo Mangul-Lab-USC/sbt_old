@@ -1,0 +1,13 @@
+# BLASTN 2.7.1+
+# Query: k21_6 flag=1 multi=2.1397 len=916
+# RID: UP1XW3UE014
+# Database: nt
+# Fields: query id, subject id, % identity, query length, alignment length, mismatches
+# 6 hits found
+k21_6	gi|108743534|dbj|AB261990.1|	100.000	916	916	0
+k21_6	gi|383212114|dbj|AB627953.1|	99.017	916	916	9
+k21_6	gi|162945384|gb|EU136038.1|	87.055	916	842	106
+k21_6	gi|120971516|gb|EF164923.1|	85.595	916	840	121
+k21_6	gi|82659700|gb|DQ286931.1|	79.207	916	832	171
+k21_6	gi|1009284155|gb|KT731538.1|	78.624	916	814	170
+# BLAST processed 1 queries

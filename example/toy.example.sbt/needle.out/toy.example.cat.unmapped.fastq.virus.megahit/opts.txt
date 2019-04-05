@@ -1,0 +1,9 @@
+--k-step
+10
+-r
+/u/project/zarlab/serghei/code/seeing.beyond.target/example/toy.example.sbt/needle.out/toy.example.cat.unmapped.fastq.virus.fastq
+-o
+/u/project/zarlab/serghei/code/seeing.beyond.target/example/toy.example.sbt/needle.out/toy.example.cat.unmapped.fastq.virus.megahit
+--out-prefix
+virus.megahit
+MEGAHIT_TEMP_DIR: /u/project/zarlab/serghei/code/seeing.beyond.target/example/toy.example.sbt/needle.out/toy.example.cat.unmapped.fastq.virus.megahit/tmp/

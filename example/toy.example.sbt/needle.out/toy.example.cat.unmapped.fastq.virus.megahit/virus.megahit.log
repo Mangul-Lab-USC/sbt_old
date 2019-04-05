@@ -1,0 +1,140 @@
+MEGAHIT v1.1.3
+--- [Tue Sep 25 21:14:05 2018] Start assembly. Number of CPU threads 12 ---
+--- [Tue Sep 25 21:14:05 2018] Available memory: 25333223424, used: 22799901081
+--- [Tue Sep 25 21:14:05 2018] Converting reads to binaries ---
+/u/project/zarlab/serghei/code/seeing.beyond.target/tools/needle/tools/megahit/megahit_asm_core buildlib /u/project/zarlab/serghei/code/seeing.beyond.target/example/toy.example.sbt/needle.out/toy.example.cat.unmapped.fastq.virus.megahit/tmp/reads.lib /u/project/zarlab/serghei/code/seeing.beyond.target/example/toy.example.sbt/needle.out/toy.example.cat.unmapped.fastq.virus.megahit/tmp/reads.lib
+    [read_lib_functions-inl.h  : 209]     Lib 0 (/u/project/zarlab/serghei/code/seeing.beyond.target/example/toy.example.sbt/needle.out/toy.example.cat.unmapped.fastq.virus.fastq): se, 26 reads, 1120 max length
+    [utils.h                   : 126]     Real: 0.0121	user: 0.0000	sys: 0.0080	maxrss: 6344
+--- [Tue Sep 25 21:14:05 2018] k list: 21,31,41,51,61,71,81,91,101,111,121,131,141 ---
+--- [Tue Sep 25 21:14:05 2018] Extracting solid (k+1)-mers for k = 21 ---
+cmd: /u/project/zarlab/serghei/code/seeing.beyond.target/tools/needle/tools/megahit/megahit_sdbg_build count -k 21 -m 2 --host_mem 22799901081 --mem_flag 1 --gpu_mem 0 --output_prefix /u/project/zarlab/serghei/code/seeing.beyond.target/example/toy.example.sbt/needle.out/toy.example.cat.unmapped.fastq.virus.megahit/tmp/k21/21 --num_cpu_threads 12 --num_output_threads 4 --read_lib_file /u/project/zarlab/serghei/code/seeing.beyond.target/example/toy.example.sbt/needle.out/toy.example.cat.unmapped.fastq.virus.megahit/tmp/reads.lib
+    [sdbg_builder.cpp          : 112]     Host memory to be used: 22799901081
+    [sdbg_builder.cpp          : 113]     Number CPU threads: 12
+    [cx1.h                     : 450]     Preparing data...
+    [read_lib_functions-inl.h  : 256]     Before reading, sizeof seq_package: 1460
+    [read_lib_functions-inl.h  : 260]     After reading, sizeof seq_package: 1460
+    [cx1_kmer_count.cpp        : 136]     26 reads, 1120 max read length
+    [cx1.h                     : 457]     Preparing data... Done. Time elapsed: 0.0005
+    [cx1.h                     : 464]     Preparing partitions and initialing global data...
+    [cx1_kmer_count.cpp        : 227]     2 words per substring, 2 words per edge
+    [cx1_kmer_count.cpp        : 322]     Set: 4084, 22767393649
+    [cx1_kmer_count.cpp        : 356]     589, 72 4084 22767393649
+    [cx1_kmer_count.cpp        : 363]     Memory for reads: 1524
+    [cx1_kmer_count.cpp        : 364]     max # lv.1 items = 589
+    [cx1.h                     : 480]     Preparing partitions and initialing global data... Done. Time elapsed: 0.0757
+    [cx1.h                     : 486]     Start main loop...
+    [cx1.h                     : 515]     Lv1 scanning from bucket 0 to 9
+    [cx1.h                     : 528]     Lv1 scanning done. Large diff: 0. Time elapsed: 0.0014
+    [cx1.h                     : 594]     Lv1 fetching & sorting done. Time elapsed: 0.0010
+    [cx1.h                     : 515]     Lv1 scanning from bucket 9 to 29
+    [cx1.h                     : 528]     Lv1 scanning done. Large diff: 0. Time elapsed: 0.0011
+    [cx1.h                     : 594]     Lv1 fetching & sorting done. Time elapsed: 0.0008
+    [cx1.h                     : 515]     Lv1 scanning from bucket 29 to 84
+    [cx1.h                     : 528]     Lv1 scanning done. Large diff: 0. Time elapsed: 0.0009
+    [cx1.h                     : 594]     Lv1 fetching & sorting done. Time elapsed: 0.0007
+    [cx1.h                     : 515]     Lv1 scanning from bucket 84 to 154
+    [cx1.h                     : 528]     Lv1 scanning done. Large diff: 0. Time elapsed: 0.0009
+    [cx1.h                     : 594]     Lv1 fetching & sorting done. Time elapsed: 0.0007
+    [cx1.h                     : 515]     Lv1 scanning from bucket 154 to 385
+    [cx1.h                     : 528]     Lv1 scanning done. Large diff: 0. Time elapsed: 0.0010
+    [cx1.h                     : 594]     Lv1 fetching & sorting done. Time elapsed: 0.0008
+    [cx1.h                     : 515]     Lv1 scanning from bucket 385 to 823
+    [cx1.h                     : 528]     Lv1 scanning done. Large diff: 0. Time elapsed: 0.0010
+    [cx1.h                     : 594]     Lv1 fetching & sorting done. Time elapsed: 0.0007
+    [cx1.h                     : 515]     Lv1 scanning from bucket 823 to 1432
+    [cx1.h                     : 528]     Lv1 scanning done. Large diff: 0. Time elapsed: 0.0009
+    [cx1.h                     : 594]     Lv1 fetching & sorting done. Time elapsed: 0.0007
+    [cx1.h                     : 515]     Lv1 scanning from bucket 1432 to 65536
+    [cx1.h                     : 528]     Lv1 scanning done. Large diff: 0. Time elapsed: 0.0115
+    [cx1.h                     : 594]     Lv1 fetching & sorting done. Time elapsed: 0.0047
+    [cx1.h                     : 607]     Main loop done. Time elapsed: 0.0324
+    [cx1.h                     : 613]     Postprocessing...
+    [cx1_kmer_count.cpp        : 860]     Total number of candidate reads: 0(9)
+    [cx1_kmer_count.cpp        : 871]     Total number of solid edges: 1117
+    [cx1.h                     : 621]     Postprocess done. Time elapsed: 0.1329
+    [utils.h                   : 126]     Real: 0.2428	user: 0.0900	sys: 0.0670	maxrss: 21520
+--- [Tue Sep 25 21:14:06 2018] Building graph for k = 21 ---
+/u/project/zarlab/serghei/code/seeing.beyond.target/tools/needle/tools/megahit/megahit_sdbg_build seq2sdbg --host_mem 22799901081 --mem_flag 1 --gpu_mem 0 --output_prefix /u/project/zarlab/serghei/code/seeing.beyond.target/example/toy.example.sbt/needle.out/toy.example.cat.unmapped.fastq.virus.megahit/tmp/k21/21 --num_cpu_threads 12 -k 21 --kmer_from 0 --num_edge_files 4 --input_prefix /u/project/zarlab/serghei/code/seeing.beyond.target/example/toy.example.sbt/needle.out/toy.example.cat.unmapped.fastq.virus.megahit/tmp/k21/21 --need_mercy
+    [sdbg_builder.cpp          : 339]     Host memory to be used: 22799901081
+    [sdbg_builder.cpp          : 340]     Number CPU threads: 12
+    [cx1.h                     : 450]     Preparing data...
+    [cx1_seq2sdbg.cpp          : 394]     Number edges: 1117
+    [cx1_seq2sdbg.cpp          : 434]     Bases to reserve: 30712, number contigs: 0, number multiplicity: 1396
+    [cx1_seq2sdbg.cpp          : 440]     Before reading, sizeof seq_package: 7688, multiplicity vector: 1396
+    [cx1_seq2sdbg.cpp          : 455]     Adding mercy edges...
+    [cx1_seq2sdbg.cpp          : 373]     Number of reads: 0, Number of mercy edges: 0
+    [cx1_seq2sdbg.cpp          : 462]     Done. Time elapsed: 1.0627
+    [cx1_seq2sdbg.cpp          : 529]     After reading, sizeof seq_package: 7688, multiplicity vector: 1396
+    [cx1.h                     : 457]     Preparing data... Done. Time elapsed: 1.1183
+    [cx1.h                     : 464]     Preparing partitions and initialing global data...
+    [cx1_seq2sdbg.cpp          : 740]     Memory for sequence: 10138
+    [cx1_seq2sdbg.cpp          : 741]     max # lv.1 items = 893
+    [cx1.h                     : 480]     Preparing partitions and initialing global data... Done. Time elapsed: 0.0663
+    [cx1.h                     : 486]     Start main loop...
+    [cx1.h                     : 515]     Lv1 scanning from bucket 0 to 212
+    [cx1.h                     : 528]     Lv1 scanning done. Large diff: 0. Time elapsed: 0.0012
+    [cx1.h                     : 594]     Lv1 fetching & sorting done. Time elapsed: 0.0011
+    [cx1.h                     : 515]     Lv1 scanning from bucket 212 to 612
+    [cx1.h                     : 528]     Lv1 scanning done. Large diff: 0. Time elapsed: 0.0010
+    [cx1.h                     : 594]     Lv1 fetching & sorting done. Time elapsed: 0.0008
+    [cx1.h                     : 515]     Lv1 scanning from bucket 612 to 1012
+    [cx1.h                     : 528]     Lv1 scanning done. Large diff: 0. Time elapsed: 0.0010
+    [cx1.h                     : 594]     Lv1 fetching & sorting done. Time elapsed: 0.0008
+    [cx1.h                     : 515]     Lv1 scanning from bucket 1012 to 1412
+    [cx1.h                     : 528]     Lv1 scanning done. Large diff: 0. Time elapsed: 0.0010
+    [cx1.h                     : 594]     Lv1 fetching & sorting done. Time elapsed: 0.0007
+    [cx1.h                     : 515]     Lv1 scanning from bucket 1412 to 1812
+    [cx1.h                     : 528]     Lv1 scanning done. Large diff: 0. Time elapsed: 0.0010
+    [cx1.h                     : 594]     Lv1 fetching & sorting done. Time elapsed: 0.0007
+    [cx1.h                     : 515]     Lv1 scanning from bucket 1812 to 65536
+    [cx1.h                     : 528]     Lv1 scanning done. Large diff: 0. Time elapsed: 0.0108
+    [cx1.h                     : 594]     Lv1 fetching & sorting done. Time elapsed: 0.0045
+    [cx1.h                     : 607]     Main loop done. Time elapsed: 0.0273
+    [cx1.h                     : 613]     Postprocessing...
+    [cx1_seq2sdbg.cpp          :1139]     Number of $ A C G T A- C- G- T-:
+    [cx1_seq2sdbg.cpp          :1142]     8 602 527 501 610 1 0 1 0
+    [cx1_seq2sdbg.cpp          :1151]     Total number of edges: 2250
+    [cx1_seq2sdbg.cpp          :1152]     Total number of ONEs: 2240
+    [cx1_seq2sdbg.cpp          :1153]     Total number of $v edges: 8
+    [cx1.h                     : 621]     Postprocess done. Time elapsed: 0.0864
+    [utils.h                   : 126]     Real: 1.3013	user: 0.1720	sys: 1.0898	maxrss: 265464
+--- [Tue Sep 25 21:14:07 2018] Assembling contigs from SdBG for k = 21 ---
+cmd: /u/project/zarlab/serghei/code/seeing.beyond.target/tools/needle/tools/megahit/megahit_asm_core assemble -s /u/project/zarlab/serghei/code/seeing.beyond.target/example/toy.example.sbt/needle.out/toy.example.cat.unmapped.fastq.virus.megahit/tmp/k21/21 -o /u/project/zarlab/serghei/code/seeing.beyond.target/example/toy.example.sbt/needle.out/toy.example.cat.unmapped.fastq.virus.megahit/intermediate_contigs/k21 -t 12 --min_standalone 300.0 --prune_level 2 --merge_len 20 --merge_similar 0.95 --low_local_ratio 0.2 --min_depth 2 --bubble_level 2 --max_tip_len -1 --careful_bubble
+    [assembler.cpp             : 148]     Loading succinct de Bruijn graph: /u/project/zarlab/serghei/code/seeing.beyond.target/example/toy.example.sbt/needle.out/toy.example.cat.unmapped.fastq.virus.megahit/tmp/k21/21 Done. Time elapsed: 0.064117
+    [assembler.cpp             : 152]     Number of Edges: 2250; K value: 21
+    [assembler.cpp             : 162]     Number of CPU threads: 12
+    [assembly_algorithms.cpp   : 162]     Removing tips with length less than 2; Accumulated tips removed: 0; time elapsed: 0.0012
+    [assembly_algorithms.cpp   : 162]     Removing tips with length less than 4; Accumulated tips removed: 0; time elapsed: 0.0001
+    [assembly_algorithms.cpp   : 162]     Removing tips with length less than 8; Accumulated tips removed: 0; time elapsed: 0.0001
+    [assembly_algorithms.cpp   : 162]     Removing tips with length less than 16; Accumulated tips removed: 0; time elapsed: 0.0009
+    [assembly_algorithms.cpp   : 162]     Removing tips with length less than 32; Accumulated tips removed: 4; time elapsed: 0.0002
+    [assembly_algorithms.cpp   : 170]     Removing tips with length less than 42; Accumulated tips removed: 4; time elapsed: 0.0004
+    [assembler.cpp             : 179]     Tips removal done! Time elapsed(sec): 0.004593
+    [assembler.cpp             : 188]     unitig graph size: 6, time for building: 0.000748
+    [assembler.cpp             : 211]     Number of bubbles removed: 0, Time elapsed(sec): 0.006825
+    [assembler.cpp             : 225]     Number of complex bubbles removed: 0, Time elapsed(sec): 0.000051
+    [assembler.cpp             : 243]     Number unitigs disconnected: 0, time: 0.000044
+    [assembler.cpp             : 265]     Unitigs removed in excessive pruning: 0, time: 0.000006
+    [assembler.cpp             : 132]     Total length: 1194, N50: 916, Mean: 199, number of contigs: 6
+    [assembler.cpp             : 133]     Maximum length: 916
+    [assembler.cpp             : 290]     Time to output: 0.000725
+    [assembler.cpp             : 317]     Number of local low depth unitigs removed: 0, complex bubbles removed: 0, time: 0.000086
+    [assembler.cpp             : 132]     Total length: 49, N50: 27, Mean: 24, number of contigs: 2
+    [assembler.cpp             : 133]     Maximum length: 27
+    [utils.h                   : 126]     Real: 0.1069	user: 0.2520	sys: 0.0470	maxrss: 11360
+--- [Tue Sep 25 21:14:07 2018] Local assembling k = 21 ---
+cmd: /u/project/zarlab/serghei/code/seeing.beyond.target/tools/needle/tools/megahit/megahit_asm_core local -c /u/project/zarlab/serghei/code/seeing.beyond.target/example/toy.example.sbt/needle.out/toy.example.cat.unmapped.fastq.virus.megahit/intermediate_contigs/k21.contigs.fa -l /u/project/zarlab/serghei/code/seeing.beyond.target/example/toy.example.sbt/needle.out/toy.example.cat.unmapped.fastq.virus.megahit/tmp/reads.lib -t 12 -o /u/project/zarlab/serghei/code/seeing.beyond.target/example/toy.example.sbt/needle.out/toy.example.cat.unmapped.fastq.virus.megahit/intermediate_contigs/k21.local.fa --kmax 31
+    [local_assembler.cpp       :  89]     Number of contigs: 1, Mapper size: 111
+    [read_lib_functions-inl.h  : 256]     Before reading, sizeof seq_package: 1460
+    [read_lib_functions-inl.h  : 260]     After reading, sizeof seq_package: 1460
+    [local_assembler.cpp       : 462]     Lib 0: total 26 reads, aligned 3, added 0 reads for local assembly
+    [utils.h                   : 126]     Real: 0.0302	user: 0.0840	sys: 0.0100	maxrss: 6348
+--- [Tue Sep 25 21:14:07 2018] Extracting iterative edges from k = 21 to 31 ---
+cmd: /u/project/zarlab/serghei/code/seeing.beyond.target/tools/needle/tools/megahit/megahit_asm_core iterate -c /u/project/zarlab/serghei/code/seeing.beyond.target/example/toy.example.sbt/needle.out/toy.example.cat.unmapped.fastq.virus.megahit/intermediate_contigs/k21.contigs.fa -b /u/project/zarlab/serghei/code/seeing.beyond.target/example/toy.example.sbt/needle.out/toy.example.cat.unmapped.fastq.virus.megahit/intermediate_contigs/k21.bubble_seq.fa -t 12 -k 21 -s 10 -o /u/project/zarlab/serghei/code/seeing.beyond.target/example/toy.example.sbt/needle.out/toy.example.cat.unmapped.fastq.virus.megahit/tmp/k31/31 -r /u/project/zarlab/serghei/code/seeing.beyond.target/example/toy.example.sbt/needle.out/toy.example.cat.unmapped.fastq.virus.megahit/tmp/reads.lib.bin -f binary
+    [iterate_edges.cpp         : 570]     Number of crusial kmers: 0
+    [iterate_edges.cpp         : 570]     Number of crusial kmers: 0
+    [iterate_edges.cpp         : 447]     Total: 26, aligned: 0. Iterative edges: 0
+    [utils.h                   : 126]     Real: 0.0035	user: 0.0230	sys: 0.0090	maxrss: 6348
+--- [Tue Sep 25 21:14:07 2018] Merging to output final contigs ---
+--- [STAT] 1 contigs, total 916 bp, min 916 bp, max 916 bp, avg 916 bp, N50 916 bp
+--- [Tue Sep 25 21:14:07 2018] ALL DONE. Time elapsed: 2.943288 seconds ---

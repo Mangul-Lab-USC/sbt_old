@@ -1,0 +1,8 @@
+# BLASTN 2.7.1+
+# Query: k21_2 flag=1 multi=2.0000 len=665
+# RID: UP1Z1RMF014
+# Database: nt
+# Fields: query id, subject id, % identity, query length, alignment length, mismatches
+# 1 hits found
+k21_2	gi|321438051|emb|FR796397.1|	100.000	665	665	0
+# BLAST processed 1 queries

@@ -1,0 +1,3 @@
+@HD	VN:1.6	SO:coordinate
+@SQ	SN:k21_2	LN:665
+@PG	ID:bwa	PN:bwa	VN:0.7.17-r1188	CL:bwa mem /u/project/zarlab/serghei/code/seeing.beyond.target/example/toy.example.sbt/needle.out/toy.example.cat.unmapped.fastq.protozoa.megahit.contigs.fa /u/project/zarlab/serghei/code/seeing.beyond.target/example/toy.example.sbt/needle.out/toy.example.cat.unmapped.fastq.protozoa.fastq
