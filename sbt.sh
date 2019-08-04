@@ -77,63 +77,7 @@ needle=${DIR_CODE}/tools/needle/needle.sh
 imrep=${DIR_CODE}/tools/imrep/imrep.py
 
 
-
-echo "-------------(1) CNV -------------"
-
-
-readCounter  --window 1000000 --quality 20 --chromosome "1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,X,Y" $BAM > $SAMPLE.wig
-
-
-Rscript ${DIR_CODE}/tools/ichorCNA/scripts/runIchorCNA.R --id $PREFIX \
---WIG $SAMPLE.wig --ploidy "c(2,3)" --normal "c(0.5,0.6,0.7,0.8,0.9)" --maxCN 5 \
---gcWig ${DIR_CODE}/db.human/ichorCNA/gc_hg19_1000kb.wig \
---mapWig ${DIR_CODE}/db.human/ichorCNA/map_hg19_1000kb.wig \
---centromere ${DIR_CODE}/db.human/ichorCNA/GRCh37.p13_centromere_UCSC-gapTable.txt \
---normalPanel ${DIR_CODE}/db.human/ichorCNA/HD_ULP_PoN_1Mb_median_normAutosome_mapScoreFiltered_median.rds \
---includeHOMD False --chrs "c(1:22, \"X\")" --chrTrain "c(1:22)" \
---estimateNormal True --estimatePloidy True --estimateScPrevalence True \
---scStates "c(1,3)" --txnE 0.9999 --txnStrength 10000 --outDir $OUTDIR/
-
-
-
-
-echo "-------------(2) Imputation -------------"
-
-REF_SITES=${DIR_CODE}/db_${ORGANISM}/sbt.REF/HRC.r1-1.GRCh37.wgs.mac5.sites.vcf.gz
-REF=${DIR_CODE}/db_${ORGANISM}/sbt.REF/Homo_sapiens_assembly19.fasta
-REF_ALLELES=${DIR_CODE}/db_${ORGANISM}/sbt.REF/HRC.r1-1.GRCh37.wgs.mac5.alleles.gz
-
-
-samtools mpileup -IE -C50 -t DP,DP4 -l $REF_SITES -g -f $REF $BAM -u | bcftools call -v -Oz -mAC alleles -f GQ,GP -T $REF_ALLELES > $SAMPLE.vcf.gz
-tabix -f $SAMPLE.vcf.gz
-
-
 cd $OUTDIR
-mkdir GeneImp
-cd GeneImp
-ln -s ${DIR_CODE}/db_${ORGANISM}/sbt.REF/*bin ./
-ln -s ${DIR_CODE}/db_${ORGANISM}/sbt.REF/*desc ./
-pwd
-
-
-export R_LIBS_USER=${${DIR_CODE}}/tools/R/
-
-
-for CHR in `seq 22`; do
-echo "$CHR"
-REF="${DIR_CODE}/db_${ORGANISM}/sbt.REF/chr${CHR}.1kg.phase3.v5a"
-#restrict to variant sites that are in the reference on this chromosome
-
-bcftools annotate --remove QUAL,FILTER,INFO,FORMAT/DP,FORMAT/GT,FORMAT/DP4,FORMAT/GP,FORMAT/GQ -c CHROM,FROM,TO,ID -a $REF.bed.gz -o $SAMPLE.$CHR.clean.vcf.gz -Oz $SAMPLE.vcf.gz -r $CHR
-tabix -f $SAMPLE.$CHR.clean.vcf.gz
-
-# run the imputation
-R --slave --args $SAMPLE.$CHR.clean.vcf.gz $REF.vcf.gz < ${DIR_CODE}/GeneImp.R
-
-done
-
-cd ../../
-
 
 
 echo "------------- ... Extract unmapped reads from " $BAM "-------------"
@@ -145,11 +89,15 @@ rm -fr ${SAMPLE}.unmapped.fastq
 UNMAPPED=${SAMPLE}.cat.unmapped.fastq
 
 
-echo "------------- (3) Use needle to detect viruses, fungia,and protozoa -------------"
-$metaphlan2 $UNMAPPED--nproc 8 --input_type fastq --bowtie2out ${SAMPLE}.metaphlan2.bowtie2.txt >${SAMPLE}.metaphlan2.txt
+Echo "Number of unmapped reads"
+wc -l  ${SAMPLE}.cat.unmapped.fastq
 
-$needle.sh --fastq $UNMAPPED needle.out
 
+echo "------------- (1) Use needle to detect viruses, fungia,and protozoa -------------"
+$needle --fastq $UNMAPPED ${OUTDIR}/needle.out
+
+
+exit 1
 
 
 echo "------------- (4) rDNA dosage -------------"
